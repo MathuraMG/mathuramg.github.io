@@ -1,0 +1,184 @@
+html 
+{
+    overflow-y: scroll;
+}
+body
+{
+	background-color: #CCCCCC;
+}
+
+nav.menuBar
+{
+	background-color: #2EC19C;	
+	opacity: 0.8;	
+	position: fixed;
+}
+
+div.container
+{
+	background-image: url('images/skulls.png');
+	background-repeat: repeat;
+}
+
+div.about-container
+{
+	display: inline-table;
+	background-color: #2EC19C;
+	opacity: 0.9;
+	border-radius: 15px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+div.blank-container
+{
+	display: inline-table;
+	opacity: 0;
+}
+
+div.display-box
+{
+	background-color: #ececec;	
+	display: inline-block;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+div.dots-all
+{
+	display: inline-relative;
+	margin: 0 auto;
+	text-align: center;
+}
+div.container-box
+{
+	display: inline-relative;
+	margin: 0 auto;
+	text-align: center;
+	opacity: 0.9;
+}
+
+div.contact-container
+{
+	display: inline-block;
+	background-color: #2EC19C;
+	opacity: 0.8;
+}
+
+a.menuBar-title
+{
+	display: inline-block;
+	vertical-align: text-bottom;
+	text-align: center;	
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: #888888;
+}
+
+a.menuBar-doc
+{
+	display: inline-block;
+	vertical-align: text-bottom;
+	text-align: center;	
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: #eeeeee;
+}
+
+a.menuBar-space
+{
+	display: inline-block;
+}
+
+a.footbar
+{
+	text-align: center;	
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 20px;
+	color: #888888;
+}
+
+a.link-pages
+{
+	display: inline-relative;
+	text-align: left;	
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: #888888;	
+}
+
+a:hover
+{
+	color: #333333;
+}
+
+a.content
+{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 30px;
+	color: #888888;
+}
+
+a.content-all
+{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 25px;
+	color: #ffffff;
+}
+
+p
+{
+	font-size: 20px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #888888;
+}
+p.name
+{
+	font-size: 50px;
+	color: #666666;
+}
+
+img.arrow
+{
+	width: 10%;
+	height: 60%;
+	display: inline-block;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+img.images
+{
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+img.personal-image
+{
+	width: 15%;
+}
+
+ul
+{
+	display: inline;
+	margin: 0 auto;
+}
+li.dot 
+{
+	display: inline-block;
+	list-style-type:none;
+	background: #444444;
+	height: 15px;
+	width: 15px;
+	border-radius: 15px;
+	margin: 10 5px;
+	text-align: center;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
