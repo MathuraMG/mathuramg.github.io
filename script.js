@@ -94,7 +94,7 @@ function setPageDimensions()
 	elts = document.getElementsByClassName( 'container-box' );
 	for( var i=0; i<elts.length; i++ )
 	{
-		elts[i].style.width = screen.width/1.2;
+		elts[i].style.width = screen.width;
 	}
 
 	elts = document.getElementsByClassName( 'display-box' );
