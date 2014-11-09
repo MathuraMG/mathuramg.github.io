@@ -58,6 +58,11 @@ div.container-box
 	opacity: 0.9;
 }
 
+div.container-header
+{
+	display: inline-relative;
+	margin: 0 auto;
+}
 div.contact-container
 {
 	display: inline-block;
@@ -71,9 +76,10 @@ a.menuBar-title
 	vertical-align: text-bottom;
 	text-align: center;	
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 20px;
+	/*font-size: 20px;*/
+	font-size: 130%;
 	text-decoration: none;
-	color: #888888;
+	color: #eeeeee;
 }
 
 a.menuBar-doc
@@ -82,7 +88,8 @@ a.menuBar-doc
 	vertical-align: text-bottom;
 	text-align: center;	
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 20px;
+	/*font-size: 20px;*/
+	font-size: 130%;
 	text-decoration: none;
 	color: #eeeeee;
 }
@@ -96,8 +103,10 @@ a.footbar
 {
 	text-align: center;	
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 20px;
-	color: #888888;
+	/*font-size: 20px;*/
+	font-size: 130%;
+	color: #eeeeee;
+	text-decoration: none;
 }
 
 a.link-pages
@@ -105,7 +114,8 @@ a.link-pages
 	display: inline-relative;
 	text-align: left;	
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 20px;
+	/*font-size: 20px;*/
+	font-size: 130%;
 	text-decoration: none;
 	color: #888888;	
 }
@@ -118,26 +128,30 @@ a:hover
 a.content
 {
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 30px;
-	color: #888888;
+	/*font-size: 30px;*/
+	font-size:250%;
+	color: #333333;
 }
 
 a.content-all
 {
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 25px;
+	/*font-size: 25px;*/
+	font-size:170%;
 	color: #ffffff;
 }
 
 p
 {
-	font-size: 20px;
+	/*font-size: 20px;*/
+	font-size: 120%;
 	font-family: Impact, Charcoal, sans-serif;
 	color: #888888;
 }
 p.name
 {
-	font-size: 50px;
+	/*font-size: 50px;*/
+	font-size: 350%;
 	color: #666666;
 }
 
@@ -149,6 +163,13 @@ img.arrow
 	margin: auto;
 	left: 0;
 	right: 0;
+	opacity: 0.6;
+}
+
+img.arrow:hover
+{
+	opacity: 1;
+	cursor: pointer;
 }
 
 img.images
