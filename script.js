@@ -13,20 +13,20 @@ var current_button_fineArts;
 
 function showNext( id )
 {
-	if( id == "fineArts" ) { 
-		total_image = total_image_fineArts; 
+	if( id == "fineArts" ) {
+		total_image = total_image_fineArts;
 		present_image = present_image_fineArts;
 	}
-	else if( id == "projects" ) { 
-		total_image = total_image_projects; 
+	else if( id == "projects" ) {
+		total_image = total_image_projects;
 		present_image = present_image_projects;
 	}
 
 	previous = present_image;
-	
+
 	present_image = present_image + 1;
 	present_image = (present_image)%total_image;
-	
+
 	current = present_image;
 	setDots(id, previous, current );
 
@@ -35,10 +35,10 @@ function showNext( id )
 	console.log( "images/" + id + present_image + ".jpg" );
 	elt.getElementsByTagName('img')[1].src = "images/" + id + present_image+ ".jpg" ;
 
-	if( id == "fineArts" ) { 
+	if( id == "fineArts" ) {
 		 present_image_fineArts = present_image;
 	}
-	else if( id == "projects" ) { 
+	else if( id == "projects" ) {
 		present_image_projects = present_image;
 	}
 }
@@ -46,19 +46,19 @@ function showNext( id )
 function showPrev( id )
 {
 
-	if( id == "fineArts" ) { 
-		total_image = total_image_fineArts; 
+	if( id == "fineArts" ) {
+		total_image = total_image_fineArts;
 		present_image = present_image_fineArts;
 	}
-	else if( id == "projects" ) { 
-		total_image = total_image_projects; 
+	else if( id == "projects" ) {
+		total_image = total_image_projects;
 		present_image = present_image_projects;
 	}
 	previous = present_image;
 	present_image = present_image -1 ;
 	if( present_image< 0)
 		{present_image = total_image + present_image; }
-	
+
 	current = present_image;
 	setDots(id, previous, current );
 
@@ -67,93 +67,12 @@ function showPrev( id )
 	elt = document.getElementById(id);
 	elt.getElementsByTagName('img')[1].src = "images/" + id + present_image+ ".jpg" ;
 
-	if( id == "fineArts" ) { 
+	if( id == "fineArts" ) {
 		 present_image_fineArts = present_image;
 	}
-	else if( id == "projects" ) { 
+	else if( id == "projects" ) {
 		present_image_projects = present_image;
 	}
-}
-
-function setPageDimensions()
-{
-	elts = document.getElementsByClassName( 'container' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width;
-		elts[i].style.height = screen.height;
-	}
-
-	elts = document.getElementsByClassName( 'container-header' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width;
-		elts[i].style.height = screen.height/10;
-	}
-	//container-box
-	elts = document.getElementsByClassName( 'container-box' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width;
-	}
-
-	elts = document.getElementsByClassName( 'display-box' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width/1.7;
-		elts[i].style.height = screen.width/3;
-	}
-
-	elts = document.getElementsByClassName( 'about-container' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width/5;
-		elts[i].style.height = screen.width/4;
-	}
-
-	elts = document.getElementsByClassName( 'blank-container' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width/12;
-		elts[i].style.height = screen.width/4;
-	}
-
-	elts = document.getElementsByClassName( 'contact-container' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width;
-		elts[i].style.height = screen.width/12;
-	}
-
-	elts = document.getElementsByClassName( 'menubar' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width;
-		elts[i].style.height = screen.height/40;
-		elts[i].style.padding = screen.height/40;
-	}
-
-	elts = document.getElementsByClassName( 'menubar-title' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width/12	;
-		//elts[i].style.height = screen.height/20;
-	}
-
-	elts = document.getElementsByClassName( 'menubar-doc' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width/12	;
-		//elts[i].style.height = screen.height/20;
-	}
-
-	elts = document.getElementsByClassName( 'menubar-space' );
-	for( var i=0; i<elts.length; i++ )
-	{
-		elts[i].style.width = screen.width/2.5	;
-		//elts[i].style.height = screen.height/20;
-	}
-
 }
 
 function setDots(id,prev,curr)
@@ -169,18 +88,17 @@ function setDots(id,prev,curr)
  	if( id == "fineArts")
 	{
 	 	previous_button_fineArts = previous_button;
-	 	current_button_fineArts = current_button;	
+	 	current_button_fineArts = current_button;
  	}
  	else if( id == "projects")
 	{
 	 	previous_button_projects = previous_button;
-	 	current_button_projects = current_button;	
+	 	current_button_projects = current_button;
  	}
 }
 
 function main()
 {
-	setPageDimensions();
 	setDots('fineArts',0,0);
 	setDots('projects',0,0);
 }

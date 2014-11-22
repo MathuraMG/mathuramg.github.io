@@ -6,39 +6,40 @@
 	<script src ="script.js"></script>
 </head>
 <body>
-<!-- MENU BAR -->
+	<!-- MENU BAR -->
 	<nav class="menuBar" >
-		<!--<a class="menuBar-title" href="#"> MG 
-		</a>-->
-		<a class="menuBar-title" href="#home"> Home 
-		</a>
-		<a class="menuBar-title" href="#projects"> Projects
-		</a>
-		<a class="menuBar-title" href="#fineArts"> Fine-Arts
-		</a>
-		<a class="menuBar-title" href="#about"> About
-		</a>
-		<a class="menuBar-space"> 
-		</a>
-		<a class="menuBar-doc" href="doc/RESUME.pdf" target="_blank"> Resume
-		</a>
-		<a class="menuBar-doc" href="doc/CASE_STUDY.pdf" target="_blank"> Case-Study
-		</a>
+
+		<li class="left">
+			<a class="menuBar-title" href="#home">Home</a>
+		</li>
+
+		<li class="left">
+			<a class="menuBar-title" href="#projects">Projects</a>
+		</li>
+
+		<li class="left">
+			<a class="menuBar-title" href="#fineArts">Fine Arts</a>
+		</li>
+
+		<li class="left">
+			<a class="menuBar-title" href="#about">About</a>
+		</li>
+
+		<li class="right">
+			<a class="menuBar-doc" href="doc/CASE_STUDY.pdf" target="_blank">Case-Study</a>
+		</li>
+
+		<li class="right">
+			<a class="menuBar-doc" href="doc/RESUME.pdf" target="_blank">Resume</a>
+		</li>
 	</nav>
 
-<!-- HOME -->
-
+	<!-- HOME -->
 	<div id="home" class="container" >
 		<div id="home-header" class="container-header">
+			<img class="personal-image" src="images/mg.png"></img>
 		</div>
 		<div class="container-box">
-			<div id="home-header" class="container-header">
-				
-			</div>
-		
-			<img class="personal-image" src="images/mg.png"></img>
-			
-			<!--<p>Hi. My name is </p>-->
 			<p class="name"> Mathura Govindarajan </p>
 			<p> Technical Analyst at Goldman Sachs, Bangalore, India </p>
 		</div>
@@ -46,132 +47,86 @@
 
 	<hr width="100%" align="center">
 
-
-<!-- PROJECTS -->
-<div id="projects" class="container" >
-		<div id="projects-header" class="container-header">
-		</div>
+	<!-- PROJECTS -->
+	<div id="projects" class="container" >
 		<div class="container-box">
-			<img class="arrow" id="arrow-left" src="images/arrow-left.png" onclick="showPrev( 'projects' )" ></img>
+			<img class="arrow" id="arrow-left" src="images/arrow-left.png" onclick="showPrev('projects')" ></img>
 			<div id="projects-box" class="display-box">
 				<img class="images" src="images/projects0.jpg"></img>
 			</div>
-			<img class="arrow" id="fineArts-right" src="images/arrow-right.png" onclick="showNext( 'projects' )" ></img>
+			<img class="arrow" id="fineArts-right" src="images/arrow-right.png" onclick="showNext('projects')" ></img>
 		</div>
 		<div class="dots-all">
-		<ul id="projects" > 
-			<li class="dot" id="projects-dot0"></li>
-			<li class="dot" id="projects-dot1"></li>
-			<li class="dot" id="projects-dot2"></li>
-		</ul>
-	</div>
+			<ul id="projects" >
+				<li class="dot" id="projects-dot0"></li>
+				<li class="dot" id="projects-dot1"></li>
+				<li class="dot" id="projects-dot2"></li>
+			</ul>
+		</div>
 	</div>
 
 	<hr width="100%" align="center">
 
-<!-- FINE-ARTS -->
+	<!-- FINE-ARTS -->
 	<div id="fineArts" class="container" >
-		<div id="fineArts-header" class="container-header"  >
-		</div>
 		<div class="container-box">
-			<img class="arrow" id="arrow-left" src="images/arrow-left.png" onclick="showPrev( 'fineArts' )" ></img>
+			<img class="arrow" id="arrow-left" src="images/arrow-left.png" onclick="showPrev('fineArts')" ></img>
 			<div id="fineArts-box" class="display-box" >
 				<img class="images" src="images/fineArts0.jpg"></img>
 			</div>
-			<img class="arrow" id="arrow-right" src="images/arrow-right.png" onclick="showNext( 'fineArts' )" ></img>
+			<img class="arrow" id="arrow-right" src="images/arrow-right.png" onclick="showNext('fineArts')" ></img>
 		</div>
 		<div class="dots-all">
-		<ul id="fineArts" > 
-			<li class="dot" id="fineArts-dot0"></li>
-			<li class="dot" id="fineArts-dot1"></li>
-			<li class="dot" id="fineArts-dot2"></li>
-			<li class="dot" id="fineArts-dot3"></li>
-			<li class="dot" id="fineArts-dot4"></li>
-		</ul>
-	</div>
+			<ul id="fineArts" >
+				<li class="dot" id="fineArts-dot0"></li>
+				<li class="dot" id="fineArts-dot1"></li>
+				<li class="dot" id="fineArts-dot2"></li>
+				<li class="dot" id="fineArts-dot3"></li>
+				<li class="dot" id="fineArts-dot4"></li>
+			</ul>
+		</div>
 	</div>
 
 	<hr width="100%" align="center">
 
-<!-- ABOUT-ME -->
+	<!-- ABOUT-ME -->
 
 
 	<div id="about" class="container" >
-		<div class="container-header"> </div>
-		<div class="container-header"> </div>
 		<div class="container-box">
 
 			<div class="about-container">
-				<a class="content">
-					<br>
-					ART
-					
-				</a>
+				<span class="content">ART</span>
 				<a class="content-all">
-					<br><br>
-
-					Dry Media
-					<br><br>
-
-					Stencil design
-					<br><br>
-
-					Origami and Kirigami
-
-				</a>
-
-			</div>
-			
-			<div class="blank-container"></div>
-			
-			<div class="about-container">
-				<a class="content">
-					<br>
-					DESIGN
-					
-				</a>	
-				<a class="content-all">
-					<br><br>
-
-					Stage Productions
-					<br><br>
-
-					Logo design
-					<br><br>
-
-					Stop motion animation
-
+					<li>Dry Media</li>
+					<li>Stencil design</li>
+					<li>Origami and Kirigami</li>
 				</a>
 			</div>
-			
-			<div class="blank-container"></div>
-			
+
 			<div class="about-container">
-				<a class="content">
-					<br>
-					TECH
-					
-				</a>
+				<span class="content">DESIGN</span>
 				<a class="content-all">
-					<br><br>
+					<li>Stage Productions</li>
+					<li>Logo design</li>
+					<li>Stop motion animation</li>
+				</a>
+			</div>
 
-					Web development
-					<br><br>
 
-					Signal processing
-					<br><br>
-
-					Database analysis
-
+			<div class="about-container">
+				<span class="content">TECH</span>
+				<a class="content-all">
+					<li>Web development</li>
+					<li>Signal processing</li>
+					<li>Database analysis</li>
 				</a>
 			</div>
 		</div>
-		<div class="container-header"> </div>
-		<div class="contact-container"> 
+
+		<div class="contact-container">
 			<a class="footbar" href="mailto:mmg9291@gmail.com">
-				<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;
-				Mathura Govindarajan &nbsp;| &nbsp;Get in touch
+				Mathura Govindarajan | Get in touch
 			</a>
 		</div>
 	</div>
