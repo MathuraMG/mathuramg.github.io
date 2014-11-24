@@ -4,7 +4,6 @@ html
 }
 body
 {
-<<<<<<< HEAD
   background-color: #CCCCCC;
   margin: 0 0;
 }
@@ -14,16 +13,6 @@ html, body {
 }
 
 
-=======
-  margin: 0;
-	background-color: #CCCCCC;
-}
-
-html, body, div.container {
-  height: 100%;
-}
-
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 nav.menuBar
 {
   width: 100%;
@@ -59,26 +48,16 @@ div#home {
 
 div#about {
   position: relative;
-<<<<<<< HEAD
   height: auto;
-=======
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 }
 
 div.about-container
 {
 	display: inline-block;
-<<<<<<< HEAD
   padding: 1em;
   margin: 2em;
   width: 230px;
   	border-radius: 15px;
-=======
-  padding: 2em;
-  margin: 2em;
-
-	border-radius: 15px;
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 	background-color: #2EC19C;
 	opacity: 0.9;
@@ -103,7 +82,6 @@ div.display-box
 	left: 0;
 	right: 0;
   height: 100%;
-<<<<<<< HEAD
  
 }
 
@@ -121,8 +99,6 @@ div.display-box-header
 	font-size: 140%;
 	color: #2EC19C;
 	font-family: Impact, Charcoal, sans-serif;
-=======
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 }
 
 div.dots-all
@@ -133,7 +109,6 @@ div.dots-all
 }
 div.container-box
 {
-<<<<<<< HEAD
 	/*height: 100%;*/
   text-align: center;
 }
@@ -141,9 +116,6 @@ div.container-box
 div#about div.container-box
 {
 	height: auto;
-=======
-	height: 100%;
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
   text-align: center;
 }
 
@@ -159,11 +131,7 @@ div.contact-container
   left: 0;
 	width: 100%;
   text-align: center;
-<<<<<<< HEAD
   /*padding: 1em;*/
-=======
-  padding: 1em;
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 	background-color: #2EC19C;
 	opacity: 0.8;
 }
@@ -302,13 +270,8 @@ p.name
 
 img.arrow
 {
-<<<<<<< HEAD
 	width: 10%;
 	/*height: 50%;*/
-=======
-	width: 5%;
-	height: 50%;
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 	display: inline-block;
 	margin: auto;
 	left: 0;
@@ -330,7 +293,6 @@ img.images
 	 border: 6px solid #2EC19C;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
-<<<<<<< HEAD
 }
 
 img.image-dropdown
@@ -339,17 +301,11 @@ img.image-dropdown
 	padding-top: 10%;
 	padding-right: 10%;
 	display: inline-block;
-=======
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 }
 
 img.personal-image
 {
-<<<<<<< HEAD
 	width: 170px;
-=======
-	width: 15%;
->>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
   border-radius: 50%;
   border: 6px solid white;
 }
