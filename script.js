@@ -90,9 +90,14 @@ function showPrev( id )
 		 document.getElementById('fineArts-header').innerHTML = fineArts_header[present_image];
 	}
 	else if( id == "projects" ) {
+<<<<<<< HEAD
 		present_image_projects = present_image
 		document.getElementById('projects-header').innerHTML = projects_header[present_image];
 		document.getElementById('projects-text').innerHTML = projects_text[present_image];	}
+=======
+		present_image_projects = present_image;
+	}
+>>>>>>> f0e5083697375a5c0d018741f666aef82492e76d
 }
 
 function setDots(id,prev,curr)
