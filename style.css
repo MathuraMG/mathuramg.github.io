@@ -31,6 +31,15 @@ nav.menuBar li {
 
 nav.menuBar li.right {
   float: right;
+  position:relative;
+}
+
+img.image-dropdown
+{
+  height: 80%;
+  padding-top: 10%;
+  padding-right: 10%;
+  display: none;
 }
 
 div.container
@@ -82,7 +91,7 @@ div.display-box
 	left: 0;
 	right: 0;
   height: 100%;
- 
+
 }
 
 div.display-box-text
@@ -160,15 +169,18 @@ a.menuBar-doc
 	color: #eeeeee;
 }
 
-	nav li ul 
+	nav li ul
 	{
 		display: none;
 	}
 
-a.dropdown-toggle
+.dropdown-toggle
 {
 	display: none;
 	float: right;
+  position: absolute;
+  top: 56px;
+  right: 0;
 }
 
 a.dropdown-options
@@ -188,7 +200,12 @@ a.dropdown-options
 		display: none;
 	}
 
-	a.dropdown-toggle
+  img.image-dropdown
+  {
+    display: inline-block;
+  }
+
+  div.dropdown-toggle
 	{
 		display: inline-block;
 	}
@@ -293,14 +310,6 @@ img.images
 	 border: 6px solid #2EC19C;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
-}
-
-img.image-dropdown
-{
-	height: 80%;
-	padding-top: 10%;
-	padding-right: 10%;
-	display: inline-block;
 }
 
 img.personal-image
