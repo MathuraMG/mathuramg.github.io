@@ -4,7 +4,7 @@ var present_image = 0;
 var present_image_fineArts = 0;
 var present_image_projects = 0;
 var total_image_fineArts = 5;
-var total_image_projects = 3;
+var total_image_projects = 4;
 
 var previous_button_fineArts;
 var current_button_projects;
@@ -15,14 +15,16 @@ var toggle = 0;
 
 fineArts_header = ["Charcoal","Pen","Origami-Kirigami","Pastels","Pencil"];
 
-projects_header = ["Early Detection of Alzheimer's disease","Rachana Logo Design","Claymation Video"];
+projects_header = ["Early Detection of Alzheimer's disease","Rachana Logo Design","Claymation Video","Web page designing"];
 
 projects_text = ["<br>Developed and implemented image processing algorithms for the early detection of Alzheimer's<br> " 
 						 + "disease using OpenCV and Matlab",
  "<br>Designed logo for the production unit of Seva-in-Action: Rachana, an NGO operating out "
 						 + "<br>of Bangalore, Karnataka for the rehabilitation of the disabled",
  "<br>Conceptualized and produced Claymation video for publicity of Engineer-2012 - Technical fest "
-						 + "<br>of National Institute of Technology, Karnataka"]
+						 + "<br>of National Institute of Technology, Karnataka",
+ "<br>Designed web page through an iterative process to showcase personal art work" 
+						 +"<br>over the years classified by media"]
 
 function showNext( id )
 {
@@ -103,8 +105,8 @@ function setDots(id,prev,curr)
 	console.log( currId );
  	previous_button  = document.getElementById( prevId );
  	current_button   = document.getElementById( currId );
- 	previous_button.style.background = '#444444';
- 	current_button.style.background = '#2EC19C';
+ 	previous_button.style.background = '#888888';
+ 	current_button.style.background = '#111111';//#2EC19C';
  	if( id == "fineArts")
 	{
 	 	previous_button_fineArts = previous_button;

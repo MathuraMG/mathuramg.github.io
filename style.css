@@ -1,3 +1,9 @@
+@font-face
+{
+	font-family:"CoverFont";
+	src: url(fonts/AllerDisplay.ttf);
+}
+
 html
 {
     overflow-y: scroll;
@@ -31,6 +37,15 @@ nav.menuBar li {
 
 nav.menuBar li.right {
   float: right;
+  position:relative;
+}
+
+img.image-dropdown
+{
+  height: 80%;
+  padding-top: 10%;
+  padding-right: 10%;
+  display: none;
 }
 
 div.container
@@ -56,7 +71,7 @@ div.about-container
 	display: inline-block;
   padding: 1em;
   margin: 2em;
-  width: 230px;
+  width: 250px;
   	border-radius: 15px;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 	background-color: #111111;/*#2EC19C;*/
@@ -82,7 +97,7 @@ div.display-box
 	left: 0;
 	right: 0;
   height: 100%;
- 
+
 }
 
 div.display-box-text
@@ -90,16 +105,16 @@ div.display-box-text
 	margin: auto;
 	width: 100%;
 	text-align: center;
-	 font-family: Tahoma, Geneva, sans-serif;
-	color: #888888;
+	font-family: 'Montserrat', sans-serif;
+	color: #555555;
 }
 
 div.display-box-header
 {
 	/*font-size: 140%;*/
-	font-size: 20px;
+	font-size: 30px;
 	color: #111111;/*#2EC19C;*/
-	font-family: Impact, Charcoal, sans-serif;
+	font-family:"CoverFont";
 }
 
 div.dots-all
@@ -144,7 +159,7 @@ a.menuBar-title
 	display: inline-block;
 	vertical-align: text-bottom;
 	text-align: center;
-	font-family: Impact, Charcoal, sans-serif;
+	font-family:"CoverFont";
 	font-size: 20px;
 	/*font-size: 130%;*/
 	text-decoration: none;
@@ -156,23 +171,26 @@ a.menuBar-doc
 	display: inline-block;
 	vertical-align: text-bottom;
 	text-align: center;
-	font-family: Impact, Charcoal, sans-serif;
+	font-family:"CoverFont";
 	font-size: 20px;
 	/*font-size: 130%;*/
 	text-decoration: none;
 	color: #eeeeee;
 }
 
-	nav li ul 
+	nav li ul
 	{
 		display: none;
 	}
 
+.dropdown-toggle
 
-a.dropdown-toggle
 {
 	display: none;
 	float: right;
+  position: absolute;
+  top: 56px;
+  right: 0;
 }
 
 a.dropdown-options
@@ -192,7 +210,12 @@ a.dropdown-options
 		display: none;
 	}
 
-	a.dropdown-toggle
+  img.image-dropdown
+  {
+    display: inline-block;
+  }
+
+  div.dropdown-toggle
 	{
 		display: inline-block;
 	}
@@ -221,7 +244,7 @@ a.menuBar-space
 a.footbar
 {
 	text-align: center;
-	font-family: Impact, Charcoal, sans-serif;
+	font-family:"CoverFont";
 	/*font-size: 20px;*/
 	font-size: 130%;
 	color: #eeeeee;
@@ -232,7 +255,7 @@ a.link-pages
 {
 	display: inline-relative;
 	text-align: left;
-	font-family: Impact, Charcoal, sans-serif;
+	font-family:"CoverFont";
 	font-size: 20px;
 	/*font-size: 130%;*/
 	text-decoration: none;
@@ -241,37 +264,37 @@ a.link-pages
 
 a:hover
 {
-	color: #333333;
+	color: #2EC19C;
 }
 
 span.content
 {
-	font-family: Impact, Charcoal, sans-serif;
+	font-family:"CoverFont";
 	font-size: 30px;
 	/*font-size:250%;*/
-	color: #333333;
+	color: #555555;
 }
 
 a.content-all
 {
-	font-family: Impact, Charcoal, sans-serif;
-	font-size: 22px;
+	font-family:'Montserrat', sans-serif;
+	font-size: 20px;
 	/*font-size:150%;*/
 	color: #ffffff;
 }
 
 p
 {
-	font-size: 17px;
+	font-size: 22px;
 	/*font-size: 120%;*/
-	font-family: Impact, Charcoal, sans-serif;
-	color: #888888;
+	font-family:"CoverFont";
+	color: #555555;
 }
 p.name
 {
 	font-size: 50px;
 	/*font-size: 350%;*/
-	color: #666666;
+	color: #111111;
 }
 
 img.arrow
@@ -301,14 +324,6 @@ img.images
   vertical-align: middle;
 }
 
-img.image-dropdown
-{
-	height: 80%;
-	padding-top: 10%;
-	padding-right: 10%;
-	display: inline-block;
-}
-
 img.personal-image
 {
 	width: 170px;
@@ -325,7 +340,7 @@ li.dot
 {
 	display: inline-block;
 	list-style-type:none;
-	background: #444444;
+	background: #888888;
 	height: 15px;
 	width: 15px;
 	border-radius: 15px;
