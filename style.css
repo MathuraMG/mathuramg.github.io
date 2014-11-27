@@ -17,7 +17,7 @@ nav.menuBar
 {
   width: 100%;
   height: 4em;
-	background-color: #2EC19C;
+	background-color: #111111;
 	opacity: 0.8;
 	position: fixed;
   z-index: 9999;
@@ -59,7 +59,7 @@ div.about-container
   width: 230px;
   	border-radius: 15px;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-	background-color: #2EC19C;
+	background-color: #111111;/*#2EC19C;*/
 	opacity: 0.9;
 }
 
@@ -96,8 +96,9 @@ div.display-box-text
 
 div.display-box-header
 {
-	font-size: 140%;
-	color: #2EC19C;
+	/*font-size: 140%;*/
+	font-size: 20px;
+	color: #111111;/*#2EC19C;*/
 	font-family: Impact, Charcoal, sans-serif;
 }
 
@@ -131,8 +132,10 @@ div.contact-container
   left: 0;
 	width: 100%;
   text-align: center;
-  /*padding: 1em;*/
-	background-color: #2EC19C;
+  padding-bottom: 1em;
+  padding-top: 1em;
+
+	background-color: #111111;/*#2EC19C;*/
 	opacity: 0.8;
 }
 
@@ -142,8 +145,8 @@ a.menuBar-title
 	vertical-align: text-bottom;
 	text-align: center;
 	font-family: Impact, Charcoal, sans-serif;
-	/*font-size: 20px;*/
-	font-size: 130%;
+	font-size: 20px;
+	/*font-size: 130%;*/
 	text-decoration: none;
 	color: #eeeeee;
 }
@@ -154,8 +157,8 @@ a.menuBar-doc
 	vertical-align: text-bottom;
 	text-align: center;
 	font-family: Impact, Charcoal, sans-serif;
-	/*font-size: 20px;*/
-	font-size: 130%;
+	font-size: 20px;
+	/*font-size: 130%;*/
 	text-decoration: none;
 	color: #eeeeee;
 }
@@ -164,6 +167,7 @@ a.menuBar-doc
 	{
 		display: none;
 	}
+
 
 a.dropdown-toggle
 {
@@ -197,7 +201,7 @@ a.dropdown-options
 	{
 		display: inline-block;
 		padding: 0;
-		background-color: #2EC19C;
+		background-color:#111111;/*#2EC19C;*/
 		width: 200px;
 	}
 
@@ -229,8 +233,8 @@ a.link-pages
 	display: inline-relative;
 	text-align: left;
 	font-family: Impact, Charcoal, sans-serif;
-	/*font-size: 20px;*/
-	font-size: 130%;
+	font-size: 20px;
+	/*font-size: 130%;*/
 	text-decoration: none;
 	color: #888888;
 }
@@ -243,28 +247,30 @@ a:hover
 span.content
 {
 	font-family: Impact, Charcoal, sans-serif;
-	/*font-size: 30px;*/
-	font-size:250%;
+	font-size: 30px;
+	/*font-size:250%;*/
 	color: #333333;
 }
 
 a.content-all
 {
 	font-family: Impact, Charcoal, sans-serif;
-	/*font-size: 25px;*/
-	font-size:150%;
+	font-size: 22px;
+	/*font-size:150%;*/
 	color: #ffffff;
 }
 
 p
 {
-	font-size: 120%;
+	font-size: 17px;
+	/*font-size: 120%;*/
 	font-family: Impact, Charcoal, sans-serif;
 	color: #888888;
 }
 p.name
 {
-	font-size: 350%;
+	font-size: 50px;
+	/*font-size: 350%;*/
 	color: #666666;
 }
 
@@ -290,7 +296,7 @@ img.images
 {
   max-width: 60%;
 	border-radius: 15px;
-	 border: 6px solid #2EC19C;
+	 border: 6px solid #111111;/*#2EC19C;*/
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
 }
