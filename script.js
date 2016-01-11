@@ -17,7 +17,7 @@ var toggle = 0;
 
 fineArts_header = ["Charcoal","Pen","Origami-Kirigami","Pastels","Pencil"];
 
-nyu_header = ["Capacitive-Theramin","Math Patterns","Animation"];
+nyu_header = ["Capacitive-Theremin","Math Patterns","Animation"];
 nyu_text = ["Check out <a href=\"https://vimeo.com/143633528\" style=\"color:#888888\"> this </a> link for the video ", 
 "Available at - <a href = \"http://mathpatterns.herokuapp.com\" style=\"color:#888888\" >mathpatterns.herokuapp.com</a> * Code work on - <a href = \"http://mathuramg.com/ICMWork\" style=\"color:#888888\"> mathuramg.com/ICMWork</a>", 
 "videos on <a href = \"https://vimeo.com/home/myvideos/\" style=\"color:#888888\" >vimeo</a>  "];
