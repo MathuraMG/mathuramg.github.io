@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>MathuraMG</title>
+    <link rel="stylesheet" href="../style.css" > 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="header">
+         <!-- MENU BAR -->
+         <l id="firstName"> Mathura</l> <l id="surName">Govindarajan </l>
+         <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>  
+         <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>   
+         <a href="../about.html" class="menuTitle">About</a>   
+    </div>
+    
+    <hr id="headerLine">
+
+    <div id="body">
+        
+        <h2> Early detection of Alzheimers </h2>
+
+        <h4> Tools Used : Matlab, openCV </h4>
+        
+        <p> 
+            Alzheimer's disease (AD) is an irreversible and progressive brain disease that gradually destroys memory and thinking skills to an extent that it starts affecting the daily life. It has become the most common cause of dementia among older people. This project looks at utility of image processing on the Magnetic Resonance Imaging (MRI) scans to estimate the possibility of an early detection of AD.
+        <p>
+        <img class="projectImg" src="../assets/AD/ad0.png"></img>
+        <p> 
+            The paper published on this can be found <a style="text-decoration:none" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&amp;tp=&amp;arnumber=7091517&amp;searchWithin%3DMathura%26queryText%3Dalzheimer">here</a>
+        </p>
+        <p>
+            Here we built a tool to look at two main indicators. The aim of the building the tool was to reduce the manual work for the doctors, thus the tool is very easy to use and one needs to do minimum pre-work before running the diagnostics on the tool.
+        </p>
+        <br>
+        <h3>Brain Atrophy</h3>
+        <p>
+            Here we looked at the total brain volume and the percentage of grey and white matter in it. This percentage helped us determine the possibility of AD. Here, the user of the tools simply has to point the program to the location of the MRI scans and the volume is calculated
+        </p>
+        <img class="projectImg" src="../assets/AD/ad1.png"></img>
+        <br>
+        <img class="projectImg" src="../assets/AD/ad2.png"></img>
+
+        
+        <h3>Hipocampal Volume</h3>
+
+        <p>
+            Here we looked at particularly the size of the hippocampus in the brain. This is as, in case of AD it is one of the first regions to get affected and thus shrink in size. In this case, the user will have to isolate the ROI (region of interest) where the hippocampus is present. On doing that, the software will pull out and highlight the hippocampus.
+        </p>
+       
+        
+    </div>
+
+</body>
+</html>
