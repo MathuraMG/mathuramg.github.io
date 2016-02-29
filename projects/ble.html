@@ -1,44 +1,55 @@
 <html>
 <head>
+
     <title>MathuraMG</title>
-    <link rel="stylesheet" href="../style.css" > 
+
+    <link rel="stylesheet" href="../style.css" >
+    <link rel="stylesheet" href="../about.css" >
+    <link rel="stylesheet" href="../projects.css" >
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
     <div id="header">
-         <!-- MENU BAR -->
-         <l id="firstName"> Mathura</l> <l id="surName">Govindarajan </l>
-         <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>  
-         <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>   
-         <a href="../about.html" class="menuTitle">About</a>  
+      <!-- MENU BAR -->
+      <div class="headerName">
+        <a id="firstName"> Mathura</a> <a id="surName">Govindarajan </a>
+      </div>
+      <div class="headerMenu">
+        <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>
+        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
+        <a href="../about.html" class="menuTitle">About</a>
+      </div>
     </div>
-    
-    <hr id="headerLine">
+
+
 
     <div id="body">
-        
+      <hr id="headerLine">
+
         <h2> Bluetooth Matrix </h2>
 
         <h4> Tools Used : RFduino, node.js, PhoneGap </h4>
 
-        <p> 
+        <p>
             A bluetooth app to control a LED matrix using an android phone.
         </p>
 
-        <div class="vimeoVideo" > 
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/156643954?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> 
+        <div class="vimeoVideo" >
+            <iframe class="projectVideo" src="https://player.vimeo.com/video/156643954?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
         </div>
-        
-        <h2> Details </h2>       
-        <h4> LED Matrix </h4>       
-        <img class="projectImg" src="../assets/ble/img2.jpg"></img>       
+
+        <h2> Details </h2>
+        <h4> LED Matrix </h4>
+        <img class="projectImg" src="../assets/ble/img2.jpg"></img>
         <p>
             This was made with 64 LEDs  (although only half are being controlled by the phone currently). They are controlled using SN74HC595 shift registers. This enables us to pass bytes through  bluetooth and the chip will convert it into highs and lows for each LED.
         </p>
-        
+
         <h4>PhoneGap</h4>
 
         <p>
@@ -56,8 +67,8 @@
 
         <br>
         <a class="backLink" href="../index.html"> &#x2190; Back to Home </a>
-        <br>     
-     
+        <br>
+
 
 
 
