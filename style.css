@@ -241,6 +241,49 @@ l#footerNotes
 /*
 @media only screen and (max-device-width : 800px) and (min-device-width : 481px) {
    /* Tablet view: 2 tiles */
+   .portfolioHeaderBlank.portfolioHeader
+   {
+     display: none;
+   }
+   a.portfolioHeader
+   {
+    width: 49%;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+   }
+   #header
+    {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    div#body
+    {
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    html
+    {
+      font-size: 200%;
+    }
+    .menuTitle
+    {
+      width:100%;
+      text-align: center;
+    }
+    .headerMenu
+    {
+      width:100%;
+      float: none;
+    }
+    .headerName
+    {
+      width:100%;
+      float: none;
+      text-align: center;
+    }
+}
 /*   .portfolioHeaderBlank.portfolioHeader
    {
      display: none;
