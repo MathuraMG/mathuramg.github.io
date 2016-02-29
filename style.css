@@ -238,7 +238,7 @@ l#footerNotes
       text-align: center;
     }
 }
-/*
+
 @media only screen and (max-device-width : 800px) and (min-device-width : 481px) {
    /* Tablet view: 2 tiles */
    .portfolioHeaderBlank.portfolioHeader
@@ -284,56 +284,3 @@ l#footerNotes
       text-align: center;
     }
 }
-/*   .portfolioHeaderBlank.portfolioHeader
-   {
-     display: none;
-   }
-   a.portfolioHeader
-   {
-     width: 49.5%;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-   }
-   div#header
-    {
-    height:     80px;
-    margin-left: 16%;
-    margin-right: 16%;
-    }
-    a.menuTitle
-    {
-    font-family: 'Abel', sans-serif;
-    font-size: 16px;
-    height: 50%;
-    width: 30%;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    color: black;
-    }
-    a.menuTitleHighlighted
-    {
-    color:#ffcc00;
-    }
-    #firstName
-    {
-    font-family: 'Abel', sans-serif;
-    color: #ffcc00;
-    width: 50%;
-    height: 50%;
-    font-size: 36px;
-
-    }
-    #surName
-    {
-    font-family: 'Abel', sans-serif;
-    color: black;
-    width: 50%;
-    height: 50%;
-    font-size: 36px;
-    margin-right: 20%;
-    }
-
-
-}*/
