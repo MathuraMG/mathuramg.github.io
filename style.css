@@ -73,8 +73,8 @@ img.portfolioImgBlank
 div#footer
 {
     height: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 div#body
 {
@@ -93,6 +93,11 @@ hr#headerLine
 hr#footerLine
 {
  width: 100%;
+}
+.linkPage img
+{
+  height: 200%;
+  text-align:right;
 }
 a.backLink
 {
@@ -186,6 +191,7 @@ a.menuTitleHighlighted
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
+
 
 l#footerNotes
     {
