@@ -21,9 +21,9 @@ img.portfolioImgZoom
     top: 0;
     left: 0;
     opacity: 0.4;
-    /*-webkit-transition: margin-top 500ms ease-out 1s, margin-left 500ms ease-out 1s, width 500ms ease-out 1s;
+    -webkit-transition: margin-top 500ms ease-out 1s, margin-left 500ms ease-out 1s, width 500ms ease-out 1s;
     -moz-transition: margin-top 500ms ease-out 1s, margin-left 500ms ease-out 1s, width 500ms ease-out 1s;
-    -o-transition: margin-top 500ms ease-out 1s, margin-left 500ms ease-out 1s, width 500ms ease-out 1s;*/
+    -o-transition: margin-top 500ms ease-out 1s, margin-left 500ms ease-out 1s, width 500ms ease-out 1s;
     transition: margin-top 250ms ease-out, margin-left 250ms ease-out, width 250ms ease-out, opacity 250ms ease-out;
 
 }
@@ -62,6 +62,13 @@ img.portfolioImgBlank
     width:70%;
     margin-left: auto;
     margin-right: auto;
+}
+#header:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 div#footer
 {
