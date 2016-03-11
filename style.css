@@ -103,13 +103,14 @@ hr#footerLine
 }
 a.backLink
 {
-font-family: 'Lato', sans-serif;
+font-family: 'Abel', sans-serif;
 font-size: 1.5rem;
 text-decoration: none;
 display: inline-block;
 text-align: left;
 color: black;
 width:80%;
+font-weight: 700;
 /*margin-left: 10%;*/
 }
 a.backLink:hover
@@ -124,6 +125,7 @@ color:#ffcc00;
     display: inline-block;
     text-align: right;
     color: black;
+
 }
 a.menuTitle:hover
 {
