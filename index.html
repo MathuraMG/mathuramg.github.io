@@ -11,6 +11,9 @@
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <script src="filter.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -31,7 +34,27 @@
 
     <div id="mainbody">
         <hr id="headerLine">
-        <a class="portfolioHeader" href= "projects/darkMaze.html">
+
+        <!-- Category tags -->
+        <div class="category">
+          <div class="category-title">
+            Categories:
+          </div>
+          <div class="category-tag category-tag-all" onclick="changeCategory('all')">
+            All
+          </div>
+          <div class="category-tag category-tag-programming" onclick="changeCategory('programming')">
+            Programming
+          </div>
+          <div class="category-tag category-tag-physcomp" onclick="changeCategory('physcomp')">
+            Physical-Computing
+          </div>
+          <div class="category-tag category-tag-animation" onclick="changeCategory('animation')">
+            Animation
+          </div>
+        </div>
+
+        <a class="portfolioHeader tag-physcomp tag-programming" href= "projects/darkMaze.html">
              <div class="portfolioImgWrapper" >
                 <img src="assets/darkMaze.jpg" class="portfolioImg" ></img>
                 <img src="assets/darkMaze.jpg" class="portfolioImgZoom" ></img>
@@ -40,7 +63,7 @@
             <div class="projectTags"> BCI, physical computing, programming </div>
 
         </a>
-        <a class="portfolioHeader" href= "projects/theremin.html">
+        <a class="portfolioHeader tag-physcomp " href= "projects/theremin.html">
             <div class="portfolioImgWrapper" >
                 <img src="assets/theramin.jpg" class="portfolioImg" ></img>
                 <img src="assets/theramin.jpg" class="portfolioImgZoom" ></img>
@@ -48,7 +71,7 @@
             <div class="projectTitle"> Capacitive Theremin </div>
             <div class="projectTags"> physical computing </div>
         </a>
-        <a class="portfolioHeader" href= "projects/ble.html">
+        <a class="portfolioHeader tag-physcomp tag-programming" href= "projects/ble.html">
              <div class="portfolioImgWrapper" >
                 <img src="assets/ble.png" class="portfolioImg" ></img>
                 <img src="assets/ble.png" class="portfolioImgZoom" ></img>
@@ -57,7 +80,7 @@
             <div class="projectTags"> physical computing, programming </div>
         </a>
 
-        <a class="portfolioHeader" href= "projects/mathPatterns.html">
+        <a class="portfolioHeader tag-programming" href= "projects/mathPatterns.html">
              <div class="portfolioImgWrapper" >
                 <img src="assets/mathPatterns.jpg" class="portfolioImg" ></img>
                 <img src="assets/mathPatterns.jpg" class="portfolioImgZoom" ></img>
@@ -66,7 +89,7 @@
             <div class="projectTags"> interactive design, programming </div>
         </a>
 
-        <a class="portfolioHeader" href= "projects/animation.html">
+        <a class="portfolioHeader tag-animation" href= "projects/animation.html">
              <div class="portfolioImgWrapper" >
                 <img src="assets/animation.jpg" class="portfolioImg" ></img>
                 <img src="assets/animation.jpg" class="portfolioImgZoom" ></img>
@@ -77,13 +100,13 @@
 
 
 
-                <a class="portfolioHeader" href= "projects/AD.html">
+                <a class="portfolioHeader tag-programming" href= "projects/AD.html">
                     <div class="portfolioImgWrapper" >
                         <img src="assets/AD.jpg" class="portfolioImg" ></img>
                         <img src="assets/AD.jpg" class="portfolioImgZoom" ></img>
                     </div>
                     <div class="projectTitle"> Early Detection of AD </div>
-                    <div class="projectTags"> signal processing, computation </div>
+                    <div class="projectTags"> signal processing, programming </div>
                 </a>
         <a class="portfolioHeader portfolioHeaderBlank">
               <div class="portfolioImgWrapper" >
@@ -92,7 +115,7 @@
              <span class="projectTitle"> </span>
          </a>
 
-        <a class="portfolioHeader" href= "projects/GOL.html">
+        <a class="portfolioHeader tag-programming" href= "projects/GOL.html">
              <div class="portfolioImgWrapper" >
                 <img src="assets/GOL.jpg" class="portfolioImg" ></img>
                 <img src="assets/GOL.jpg" class="portfolioImgZoom" ></img>

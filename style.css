@@ -136,6 +136,31 @@ a.menuTitleHighlighted
     color:#ffcc00;
 }
 
+.category-title
+{
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    color: #444444;
+    font-size: 1.2rem;
+    margin-right: 1%;
+    display: inline-block;
+
+}
+.category-tag
+{
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    color: #999999;
+    font-size: 1.2rem;
+    margin-right: 1.5%;
+    display: inline-block;
+    cursor: pointer;
+}
+.selected-category
+{
+  color: ffcc00;
+}
+
 .projectTitle
 {
     width: 100%;
