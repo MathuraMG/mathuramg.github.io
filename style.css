@@ -237,18 +237,18 @@ l#footerNotes
 
 /* THE RESPONSIVE SHIZZ */
 
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
-   .portfolioHeaderBlank.portfolioHeader
-   {
-     display: none;
-   }
    a.portfolioHeader
    {
     width: 98%;
     position: relative;
     display: inline-block;
     text-decoration: none;
+   }
+   a.portfolioHeaderBlank
+   {
+     display: none;
    }
    #header
     {
@@ -263,7 +263,7 @@ l#footerNotes
     }
     html
     {
-      font-size: 250%;
+      font-size: 100%;
     }
     .menuTitle
     {
@@ -283,18 +283,19 @@ l#footerNotes
     }
 }
 
-@media only screen and (max-device-width : 800px) and (min-device-width : 481px) {
+@media only screen and (max-width : 800px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
-   .portfolioHeaderBlank.portfolioHeader
-   {
-     display: none;
-   }
    a.portfolioHeader
    {
     width: 49%;
     position: relative;
     display: inline-block;
     text-decoration: none;
+   }
+   a.portfolioHeaderBlank
+   {
+    display: none;
+    width: 0px;
    }
    #header
     {
@@ -309,7 +310,7 @@ l#footerNotes
     }
     html
     {
-      font-size: 200%;
+      font-size: 100%;
     }
     .menuTitle
     {
