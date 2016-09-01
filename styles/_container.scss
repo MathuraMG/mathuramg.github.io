@@ -1,14 +1,28 @@
 .portfolio {
   margin: 0;
   padding: 0;
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav {
-  width: 25%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
 }
 
 .projects {
-  width: 75;
+  width: 80%;
 }

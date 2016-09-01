@@ -1,0 +1,20 @@
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+
+.footer__item {
+  width: 20%;
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__image
+{
+  width: 100%;
+  text-align:right;
+  opacity: 0.5;
+}

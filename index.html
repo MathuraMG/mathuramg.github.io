@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css?v=1" >
     <link rel="stylesheet" href="about.css" >
     <link rel="stylesheet" href="projects.css" >
+    <link rel="stylesheet" href="styles/app.css" >
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -18,156 +19,119 @@
 
 </head>
 <body>
-    <div id="header">
-      <!-- MENU BAR -->
-      <a href="#" style="text-decoration:none">
-        <div class="headerName">
-          <span id="firstName"> Mathura</span> <span id="surName">Govindarajan</span>
-        </div>
-      </a>
+  <div class="portfolio">
 
-      <div class="headerMenu">
-        <a href="#" class="menuTitle menuTitleHighlighted">Portfolio</a>
-        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
-        <a href="about.html" class="menuTitle">About</a>
-      </div>
-    </div>
+    <!-- MENU BAR -->
+    <div class="nav-footer-container">
+      <nav class="nav" role="navigation" title="main-navigation">
 
-    <div id="mainbody">
-        <hr id="headerLine">
-
-        <!-- Category tags -->
-        <div class="category">
-          <div class="category-title">
-            Categories:
+        <a href="#" style="text-decoration:none">
+          <div class="nav__name">
+            <span class="nav__first-name"> Mathura</span> <span class="nav__sur-name">Govindarajan</span>
           </div>
-          <div class="category-tag category-tag-all" onclick="changeCategory('all')">
+        </a>
+
+        <ul class="nav__items-pages" title="page navigation">
+          <li>
+            <a href="#" class="nav__item nav__item--selected">Portfolio</a>
+          </li>
+          <li>
+            <a href="http://mathuramg.com/itp" class="nav__item">Blog</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav__item">About</a>
+          </li>
+        </ul>
+
+        <ul class="nav__items-category" title="category selection">
+          <li class="nav__category nav__category-all" onclick="changeCategory('all')">
             All
-          </div>
-          <div class="category-tag category-tag-programming" onclick="changeCategory('programming')">
+          </li>
+          <li class="nav__category nav__category-programming" onclick="changeCategory('programming')">
             Programming
-          </div>
-          <div class="category-tag category-tag-physcomp" onclick="changeCategory('physcomp')">
+          </li>
+          <li class="nav__category nav__category-physcomp" onclick="changeCategory('physcomp')">
             Physical-Computing
-          </div>
-          <div class="category-tag category-tag-animation" onclick="changeCategory('animation')">
+          </li>
+          <li class="nav__category nav__category-animation" onclick="changeCategory('animation')">
             Animation
-          </div>
-        </div>
+          </li>
+        </ul>
 
-        <a class="portfolioHeader tag-physcomp tag-programming" href= "projects/darkMaze.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/darkMaze.jpg" class="portfolioImg" ></img>
-                <img src="assets/darkMaze.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Dark Maze </div>
-            <div class="projectTags"> BCI, physical computing, programming </div>
+      </nav>
 
-        </a>
-        <a class="portfolioHeader tag-physcomp " href= "projects/theremin.html">
-            <div class="portfolioImgWrapper" >
-                <img src="assets/theramin.jpg" class="portfolioImg" ></img>
-                <img src="assets/theramin.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Capacitive Theremin </div>
-            <div class="projectTags"> physical computing </div>
-        </a>
-        <a class="portfolioHeader tag-physcomp tag-programming" href= "projects/ble.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/ble.png" class="portfolioImg" ></img>
-                <img src="assets/ble.png" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Bluetooth LE </div>
-            <div class="projectTags"> physical computing, programming </div>
-        </a>
-
-        <a class="portfolioHeader tag-programming" href= "projects/mathPatterns.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/mathPatterns.jpg" class="portfolioImg" ></img>
-                <img src="assets/mathPatterns.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Math Patterns </div>
-            <div class="projectTags"> interactive design, programming </div>
-        </a>
-
-        <a class="portfolioHeader tag-animation" href= "projects/animation.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/animation.jpg" class="portfolioImg" ></img>
-                <img src="assets/animation.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Animation </div>
-            <div class="projectTags"> stop motion </div>
-        </a>
-
-        <a class="portfolioHeader tag-biosem" href= "projects/biosem.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/biosem.png" class="portfolioImg" ></img>
-                <img src="assets/biosem.png" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Pyrocystis Sings </div>
-            <div class="projectTags"> biosemiotics </div>
-        </a>
-
-         <a class="portfolioHeader tag-programming" href= "projects/AD.html">
-            <div class="portfolioImgWrapper" >
-                <img src="assets/AD.jpg" class="portfolioImg" ></img>
-                <img src="assets/AD.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Early Detection of AD </div>
-            <div class="projectTags"> signal processing, programming </div>
-        </a>
-        <a class="portfolioHeader portfolioHeaderBlank">
-              <!--<div class="portfolioImgWrapper" >
-                 <img src="assets/ble.png" class="portfolioImgBlank" ></img>
-             </div>
-             <span class="projectTitle"> </span>-->
-         </a>
-
-        <a class="portfolioHeader tag-programming" href= "projects/GOL.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/GOL.jpg" class="portfolioImg" ></img>
-                <img src="assets/GOL.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Game of Life </div>
-            <div class="projectTags"> interactive design, programming </div>
-        </a>
-
-        <!--
-
-
-       <a class="portfolioHeader" href= "projects/proto.html">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/proto.jpg" class="portfolioImg" ></img>
-                <img src="assets/proto.jpg" class="portfolioImgZoom" ></img>
-            </div>
-            <div class="projectTitle"> Prototyping</div>
-            <div class="projectTags"> wireframes, UX </div>
-        </a>
-
-
-       <a class="portfolioHeader portfolioHeaderBlank">
-             <div class="portfolioImgWrapper" >
-                <img src="assets/ble.png" class="portfolioImgBlank" ></img>
-            </div>
-            <span class="projectTitle"> </span>
-        </a>
-      -->
-
-        <br>
-        <br>
-
-        <hr id = "footerLine">
+      <footer class="footer">
+        <ul list="footer__list">
+          <li class="footer__item">
+            <a href="https://github.com/mathuramg" target="_blank">
+              <img class="footer__image" src="assets/github.png" ></img>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://vimeo.com/user43424443" target="_blank">
+              <img class="footer__image" src="assets/vimeo.png" ></img>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
-    <div id="footer">
-      <l id="footerNotes">
-        <a class="linkPage" href="https://github.com/mathuramg" target="_blank">
-          <img src="assets/github.png" ></img>
-        </a>
-        <a class="linkPage" href="https://vimeo.com/user43424443" target="_blank">
-          <img src="assets/vimeo.png" ></img>
-        </a>
-      </l>
-    </div>
+
+    <section class="projects" role="main">
+
+      <ul class="projects__list">
+
+        <li class="projects__item tag-physcomp tag-programming" href= "projects/darkMaze.html">
+          <img src="assets/darkMaze.jpg" class="project__image" ></img>
+          <div class="project__title"> Dark Maze </div>
+          <div class="project__tags"> BCI, physical computing, programming </div>
+
+        </li>
+        <li class="projects__item tag-physcomp " href= "projects/theremin.html">
+          <img src="assets/theramin.jpg" class="project__image" ></img>
+          <div class="project__title"> Capacitive Theremin </div>
+          <div class="project__tags"> physical computing </div>
+        </li>
+        <li class="projects__item tag-physcomp tag-programming" href= "projects/ble.html">
+          <img src="assets/ble.png" class="project__image" ></img>
+          <div class="project__title"> Bluetooth LE </div>
+          <div class="project__tags"> physical computing, programming </div>
+        </li>
+
+        <li class="projects__item tag-programming" href= "projects/mathPatterns.html">
+          <img src="assets/mathPatterns.jpg" class="project__image" ></img>
+          <div class="project__title"> Math Patterns </div>
+          <div class="project__tags"> interactive design, programming </div>
+        </li>
+
+        <li class="projects__item tag-animation" href= "projects/animation.html">
+          <img src="assets/animation.jpg" class="project__image" ></img>
+          <div class="project__title"> Animation </div>
+          <div class="project__tags"> stop motion </div>
+        </li>
+
+        <li class="projects__item tag-biosem" href= "projects/biosem.html">
+          <img src="assets/biosem.png" class="project__image" ></img>
+          <div class="project__title"> Pyrocystis Sings </div>
+          <div class="project__tags"> biosemiotics </div>
+        </li>
+
+         <li class="projects__item tag-programming" href= "projects/AD.html">
+          <img src="assets/AD.jpg" class="project__image" ></img>
+          <div class="project__title"> Early Detection of AD </div>
+          <div class="project__tags"> signal processing, programming </div>
+        </li>
+
+        <li class="projects__item tag-programming" href= "projects/GOL.html">
+          <img src="assets/GOL.jpg" class="project__image" ></img>
+          <div class="project__title"> Game of Life </div>
+          <div class="project__tags"> interactive design, programming </div>
+        </li>
+
+      </ul>
+
+    </section>
+
+  </div>
 
 </body>
 </html>

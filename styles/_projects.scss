@@ -1,0 +1,45 @@
+.projects__list {
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.projects__item
+{
+  margin-bottom: 2rem;
+  width: 24.5%;
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.project__title
+{
+  width: 100%;
+  margin-right: 4%;
+  margin-left: 4%;
+  font-family: 'Abel', sans-serif;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 1.2rem;
+  &:hover {
+    color: #ffcc00;
+  }
+}
+.project__tags
+{
+  width: 100%;
+  margin-right: 4%;
+  margin-left: 4%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  color: #aaaaaa;
+  font-size: 0.7rem;
+}
+
+.project__image
+{
+  width: 90%;
+}
