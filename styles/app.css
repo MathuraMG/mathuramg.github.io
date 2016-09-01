@@ -99,7 +99,7 @@
 .footer__list {
   display: flex;
   flex-direction: row;
-  margin-left: 2rem; }
+  margin-left: 0; }
 
 .footer__item {
   width: 20%;
