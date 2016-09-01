@@ -1,0 +1,40 @@
+.nav__first-name
+{
+    color: #ffcc00;
+    text-align: left;
+    text-decoration: none;
+}
+.nav__sur-name
+{
+    font-family: 'Abel', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.nav__name
+{
+  width: 50%;
+  float: left;
+  font-size: 2rem;
+  line-height: 2rem;
+
+}
+
+.nav__items-pages, .nav__items-category {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  width: 32%;
+  text-decoration: none;
+  display: inline-block;
+  text-align: right;
+  color: black;
+  &:hover,&--selected {
+    color:#ffcc00;
+    text-decoration: none;
+  }
+
+}
