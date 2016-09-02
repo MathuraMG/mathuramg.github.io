@@ -10,36 +10,50 @@
   display: inline-flex;
   flex-direction: column;
   text-decoration: none;
+
 }
 
-.project__title
+.projects__link {
+  text-decoration: none;
+  &:hover {
+    color: $content-hover-color;
+  }
+}
+
+.projects__title
 {
   width: 100%;
   margin-right: 4%;
   margin-left: 4%;
-  font-family: 'Abel', sans-serif;
+  font-family: $primary-font;
+  font-weight: 700;
   text-decoration: none;
   position: relative;
   color: black;
   font-size: 1.2rem;
   &:hover {
-    color: #ffcc00;
+    color: $content-hover-color;
   }
 }
-.project__tags
+.projects__tags
 {
   width: 100%;
   margin-right: 4%;
   margin-left: 4%;
-  font-family: 'Lato', sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   text-decoration: none;
   position: relative;
-  color: #aaaaaa;
-  font-size: 0.7rem;
+  color: $secondary-heading-color;
+  font-size: 0.8rem;
 }
 
-.project__image
+
+.projects__image
 {
   width: 90%;
+  &:hover {
+    cursor: pointer;
+    cursor: hand;
+  }
 }

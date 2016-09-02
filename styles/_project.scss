@@ -1,0 +1,49 @@
+.project-container {
+  padding: 0 2rem;
+  margin-right:20%;
+}
+
+.project__heading {
+  font-family: $primary-font;
+  color: $primary-heading-color;
+}
+
+.project__sub-heading {
+  font-family: $secondary-font;
+  color: $secondary-heading-color;
+  font-weight: 400;
+}
+
+.project__blurb {
+  font-style: italic;
+}
+
+.project__content {
+
+}
+
+.project__video-container {
+  padding-right: 2rem;
+  width: 100%;
+}
+.project__video {
+  width: 100%;
+  height: 56%;
+}
+
+.project__image {
+  width: 100%;
+}
+
+.project__back-link {
+  font-family: $primary-font;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $secondary-heading-color;
+  font-weight: 400;
+  /*margin-left: 10%;*/
+  &:hover
+  {
+  color:$primary-heading-color;
+  }
+}

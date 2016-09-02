@@ -1,20 +1,23 @@
 %nav-option {
   text-decoration: none;
-  color: #999999;
+  color: $secondary-heading-color;
   font-size: 1.2rem;
   margin-right: 1.5%;
   cursor: pointer;
+  font-family: $secondary-font;
+  font-weight: 400;
+  margin: 0.3rem 0;
 }
 
 .nav__first-name
 {
-  color: #ffcc00;
+  color: $primary-heading-color;
   text-align: left;
   text-decoration: none;
 }
 .nav__sur-name
 {
-  font-family: 'Abel', sans-serif;
+  font-family: $primary-font;
   color: black;
   text-decoration: none;
 }
@@ -34,10 +37,18 @@
   flex-direction: column;
 }
 
+.nav__link {
+  @extend %nav-option;
+  &:hover,&--selected {
+    color: $nav-hover-color;
+    text-decoration: none;
+  }
+}
+
 .nav__item {
   @extend %nav-option;
   &:hover,&--selected {
-    color: ffcc00;
+    color: $nav-hover-color;
     text-decoration: none;
   }
 }
@@ -46,6 +57,6 @@
 {
   @extend %nav-option;
   &:hover,&--selected {
-    color: ffcc00;
+    color: $nav-hover-color;
   }
 }
