@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="projects.css" >
     <link rel="stylesheet" href="styles/app.css" >
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
     <script src="filter.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 </head>
@@ -24,7 +24,7 @@
 
         <a href="#" style="text-decoration:none">
           <div class="nav__name">
-            <span class="nav__first-name"> Mathura</span> <span class="nav__sur-name">Govindarajan</span>
+            <img class="nav__logo" src="\assets\mathura.png"></img>
           </div>
         </a>
 
@@ -36,13 +36,19 @@
             <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
           </li>
           <li class="nav__item">
-            <a href="about.html" class="nav__link">About</a>
+            <a href="/fineArt.html" class="nav__link">Fine Art</a>
+          </li>
+          <li class="nav__item">
+            <a href="/about.html" class="nav__link">About</a>
           </li>
         </ul>
 
         <ul class="nav__items-category" title="category selection">
           <li class="nav__category nav__category-all" onclick="changeCategory('all')">
             All
+          </li>
+          <li class="nav__category nav__category-accessibility" onclick="changeCategory('accessibility')">
+            Accessibility
           </li>
           <li class="nav__category nav__category-programming" onclick="changeCategory('programming')">
             Programming
@@ -52,6 +58,9 @@
           </li>
           <li class="nav__category nav__category-animation" onclick="changeCategory('animation')">
             Animation
+          </li>
+          <li class="nav__category nav__category-fabrication" onclick="changeCategory('animation')">
+            Fabrication
           </li>
         </ul>
 
@@ -82,14 +91,60 @@
 
       <ul class="projects__list" title="all projects">
 
+        <li class="projects__item tag-programming tag-accessibility">
+          <a class="projects__link" href= "projects/AD.html">
+           <img src="assets/projects/p5js.png" class="projects__image" ></img>
+           <div class="projects__title"> Accessible p5 IDE </div>
+           <div class="projects__tags"> programming, accessibility </div>
+         </a>
+       </li>
+
+        <li class="projects__item tag-programming">
+          <a class="projects__link" href= "projects/GOL.html">
+            <img src="assets/projects/energy.png" class="projects__image" ></img>
+            <div class="projects__title"> Energy @ ITP </div>
+            <div class="projects__tags"> interactive design, programming </div>
+          </a>
+        </li>
+
+        <li class="projects__item tag-programming tag-physcomp tag-accessibility">
+          <a class="projects__link" href= "projects/biosem.html">
+            <img src="assets/projects/brailledisplay.png" class="projects__image" ></img>
+            <div class="projects__title"> Braille Display </div>
+            <div class="projects__tags"> programming, physical computing, accessibility</div>
+          </a>
+        </li>
+
         <li class="projects__item tag-physcomp tag-programming">
           <a class="projects__link" href= "projects/darkMaze.html">
-            <img src="assets/projects/darkMaze.jpg" class="projects__image" ></img>
-            <div class="projects__title"> Dark Maze </div>
-            <div class="projects__tags"> BCI, physical computing, programming </div>
+            <img src="assets/projects/darkMaze.jpg" class="projects__image" >
+            <div class="projects__hover-container">
+              <div class="projects__title"> Dark Maze </div>
+              <div class="projects__tags"> BCI, physical computing, programming </div>
+              <aside class="projects__blurb">A pathetic blue moon brainwashes another change defined by a spudgun.</aside>
+            </div>
+          </img>
 
           </a>
         </li>
+
+
+        <li class="projects__item  tag-programming">
+          <a class="projects__link" href= "projects/mathPatterns.html">
+            <img src="assets/projects/mathPatterns.jpg" class="projects__image" ></img>
+            <div class="projects__title"> Math Patterns </div>
+            <div class="projects__tags"> interactive design, programming </div>
+          </a>
+        </li>
+
+        <li class="projects__item tag-biosem">
+          <a class="projects__link" href= "projects/biosem.html">
+            <img src="assets/projects/biosem.png" class="projects__image" ></img>
+            <div class="projects__title"> Pyrocystis Sings </div>
+            <div class="projects__tags"> biosemiotics </div>
+          </a>
+        </li>
+
         <li class="projects__item  tag-physcomp">
           <a class="projects__link" href= "projects/theremin.html">
             <img src="assets/projects/theramin.jpg" class="projects__image" ></img>
@@ -97,19 +152,12 @@
             <div class="projects__tags"> physical computing </div>
           </a>
         </li>
+
         <li class="projects__item  tag-physcomp tag-programming">
           <a class="projects__link" href= "projects/ble.html">
             <img src="assets/projects/ble.png" class="projects__image" ></img>
             <div class="projects__title"> Bluetooth LE </div>
             <div class="projects__tags"> physical computing, programming </div>
-          </a>
-        </li>
-
-        <li class="projects__item  tag-programming">
-          <a class="projects__link" href= "projects/mathPatterns.html">
-            <img src="assets/projects/mathPatterns.jpg" class="projects__image" ></img>
-            <div class="projects__title"> Math Patterns </div>
-            <div class="projects__tags"> interactive design, programming </div>
           </a>
         </li>
 
@@ -121,13 +169,7 @@
           </a>
         </li>
 
-        <li class="projects__item tag-biosem">
-          <a class="projects__link" href= "projects/biosem.html">
-            <img src="assets/projects/biosem.png" class="projects__image" ></img>
-            <div class="projects__title"> Pyrocystis Sings </div>
-            <div class="projects__tags"> biosemiotics </div>
-          </a>
-        </li>
+
 
          <li class="projects__item tag-programming">
            <a class="projects__link" href= "projects/AD.html">
@@ -150,30 +192,6 @@
             <img src="assets/projects/fabrication.png" class="projects__image" ></img>
             <div class="projects__title"> Fabrication </div>
             <div class="projects__tags"> wood turning, metal turning </div>
-          </a>
-        </li>
-
-        <li class="projects__item tag-programming tag-physcomp">
-          <a class="projects__link" href= "projects/biosem.html">
-            <img src="assets/projects/brailledisplay.png" class="projects__image" ></img>
-            <div class="projects__title"> Braille Display </div>
-            <div class="projects__tags"> interactive design, programming, physical computing </div>
-          </a>
-        </li>
-
-         <li class="projects__item tag-programming">
-           <a class="projects__link" href= "projects/AD.html">
-            <img src="assets/projects/p5js.png" class="projects__image" ></img>
-            <div class="projects__title"> Accessible p5 IDE </div>
-            <div class="projects__tags"> interactive design, programming </div>
-          </a>
-        </li>
-
-        <li class="projects__item tag-programming">
-          <a class="projects__link" href= "projects/GOL.html">
-            <img src="assets/projects/energy.png" class="projects__image" ></img>
-            <div class="projects__title"> Energy @ ITP </div>
-            <div class="projects__tags"> interactive design, programming </div>
           </a>
         </li>
 

@@ -1,9 +1,11 @@
 @import 'variables';
+
 @import 'container';
-@import 'projects';
-@import 'project';
-@import 'nav';
 @import 'footer';
+@import 'nav';
+@import 'pieces';
+@import 'project';
+@import 'projects';
 
 body {
   margin: 0;
@@ -11,11 +13,13 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5 {
   padding: 0;
   margin: 0;
 }
 
 p {
   font-family: $secondary-font;
+  font-size: 1rem;
+  color: $para-color;
 }

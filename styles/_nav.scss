@@ -4,8 +4,8 @@
   font-size: 1.2rem;
   margin-right: 1.5%;
   cursor: pointer;
-  font-family: $secondary-font;
-  font-weight: 400;
+  font-family: $primary-font;
+  font-weight: 600;
   margin: 0.3rem 0;
 }
 
@@ -23,11 +23,14 @@
 }
 .nav__name
 {
-  width: 50%;
   float: left;
   font-size: 2rem;
   line-height: 2rem;
   padding: 1rem 2rem;
+}
+
+.nav__logo {
+  width: 100%;
 }
 
 .nav__items-pages, .nav__items-category {
