@@ -3,80 +3,93 @@
 
     <title>MathuraMG</title>
 
-    <link rel="stylesheet" href="../style.css" >
-    <link rel="stylesheet" href="../about.css" >
-    <link rel="stylesheet" href="../projects.css" >
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/app.css" >
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
+    <script src="filter.js"></script>
 
 </head>
 <body>
-    <div id="header">
-      <!-- MENU BAR -->
-      <a href="../index.html" style="text-decoration:none">
-        <div class="headerName">
-          <span id="firstName"> Mathura</span> <span id="surName">Govindarajan</span>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png"></img>
         </div>
       </a>
-      <div class="headerMenu">
-        <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>
-        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
-        <a href="../about.html" class="menuTitle">About</a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul list="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" ></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" ></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" ></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Pyrocystis Sings </h2>
+      <h5 class="project__sub-heading">Biosemiotics</h5>
+
+      <p class="project__blurb">
+        Tested with Pyrocystis Fusiformis
+        <br>
+        In collaboration with Satbir Multani
+        <br>
+        An exploration of understanding how microbes respond to different stimuli.
+      </p>
+
+      <div class="project__video-container" >
+          <iframe class="project__video" src="https://player.vimeo.com/video/158435257?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
+      <br>
+
+      <p >
+        Pyrocystis is a microbe that is commonly found in the sea. This is a series of experiments that looks at their reaction to music.
+        <br>
+        In this particular experiment, we had access to the knowledge that vibrations caused the pyrocystis to emit light. With that in mind, we were curious to see how they responded to music.
+      </p>
+      <img class="project__image" src="/assets/biosem/img1.jpg"></img>
+      <p>
+        We obtained speakers on which the vibration of the diaphram was visible. We then trained our microbes' day-night cycle so that they glow during the day (their night).
+        Post that, it was a matter of choosing the right music/vibration for the microbes to respond to.
+      </p>
+      <img class="project__image" src="/assets/biosem/img2.jpg"></img>
+      <p>
+          We tested with high bass, strings and single beats. The conclusion we drew was that, they respond best to single beats. While they do respond to string and multiple vibration of low amplitude, it causes their light to drain fast. This implies that they stop emitting light for around 20-30 minutes after that.
+      </p>
+      <br>
+      <a class="project__back-link" href="/index.html"> &#x2190; Back to Home </a>
+      <br>
+
     </div>
-
-
-
-    <div id="body">
-      <hr id="headerLine">
-
-
-        <p >
-            Pyrocystis is a microbe that is commonly found in the sea. This is a series of experiments that looks at their reaction to music.
-        </p>
-
-        <div class="vimeoVideo" >
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/158435257?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <br>
-
-
-        <p class="blurb"> Tools Used : Pyrocystis </p>
-        <p class="blurb"> In collaboration with Satbir Multani </p class="blurb">
-
-        <p>
-            This project was an exploration of understanding how microbes respond to different stimuli.
-          </p>
-          <p>
-            In this particular experiment, we had access to the knowledge that vibrations caused the pyrocystis to emit light. With that in mind, we were curious to see how they responded to music.
-          </p>
-          <img class="projectImg" src="../assets/biosem/img1.jpg"></img>
-          <p>
-            We obtained speakers on which the vibration of the diaphram was visible. We then trained our microbes' day-night cycle so that they glow during the day (their night).
-            Post that, it was a matter of choosing the right music/vibration for the microbes to respond to.
-        </p>
-
-        <img class="projectImg" src="../assets/biosem/img2.jpg"></img>
-
-        <p>
-            We tested with high bass, strings and single beats. The conclusion we drew was that, they respond best to single beats. While they do respond to string and multiple vibration of low amplitude, it causes their light to drain fast. This implies that they stop emitting light for around 20-30 minutes after that.
-        </p>
-
-        <br>
-        <a class="backLink" href="../index.html"> &#x2190; Back to Home </a>
-        <br>
-
-
-
-
-
-<!--
-<iframe src="https://player.vimeo.com/video/142265212" width="500" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/142265212">Theramin</a> from <a href="https://vimeo.com/user43424443">Mathura</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
--->
-    </div>
-
+  </section>
 </body>
 </html>

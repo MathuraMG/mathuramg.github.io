@@ -163,6 +163,10 @@
 .project__image {
   width: 100%; }
 
+.project__link {
+  text-decoration: none;
+  color: #ff706c; }
+
 .project__back-link {
   font-family: "Josefin Slab", serif;
   font-size: 1.5rem;
@@ -220,7 +224,7 @@
 
 .projects__image {
   width: 85%;
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 .projects__link {
   text-decoration: none;

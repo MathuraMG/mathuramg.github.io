@@ -36,6 +36,11 @@
   width: 100%;
 }
 
+.project__link {
+  text-decoration: none;
+  color: $primary-heading-color;
+}
+
 .project__back-link {
   font-family: $primary-font;
   font-size: 1.5rem;
