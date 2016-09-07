@@ -149,6 +149,12 @@
   color: #aaaaaa;
   font-weight: 400; }
 
+.project__content-heading {
+  font-family: "Open Sans", sans-serif;
+  color: #aaaaaa;
+  padding: 0.5rem 0;
+  font-weight: 400; }
+
 .project__blurb {
   font-style: italic; }
 

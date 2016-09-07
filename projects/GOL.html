@@ -3,69 +3,94 @@
 
     <title>MathuraMG</title>
 
-    <link rel="stylesheet" href="../style.css" >
-    <link rel="stylesheet" href="../about.css" >
-    <link rel="stylesheet" href="../projects.css" >
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/app.css" >
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
+    <script src="filter.js"></script>
 
 </head>
 <body>
-    <div id="header">
-      <!-- MENU BAR -->
-      <a href="../index.html" style="text-decoration:none">
-        <div class="headerName">
-          <span id="firstName"> Mathura</span> <span id="surName">Govindarajan</span>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png"></img>
         </div>
       </a>
-      <div class="headerMenu">
-        <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>
-        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
-        <a href="../about.html" class="menuTitle">About</a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul list="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" ></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" ></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" ></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Game of Life </h2>
+      <h5 class="project__sub-heading">Programming</h5>
+      <p class="project__blurb">
+        Tools Used : p5
+        <br>
+        A take on the simulation of Game of Life by John Conway
+      </p>
+
+        <p>
+          A simulation of Game of Life with a twist - you can decide on the input as you go. This simulation is a basic population exercise where the life of a cell depends on its neighbors.
+      </p>
+      <div class="project__video-container" >
+          <iframe class="project__video" src="https://player.vimeo.com/video/149480133" width="500" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
       </div>
+      <p>
+          This was inspired by 2 things. One being the original Game of Life. The other was that I wanted to be able to simulate pseudo population scenarios. The algorithms which decide the growth and death of these cells follow a pattern of death by overpopulation or under population and growth due to dependent population. I felt that this closely depicted real life scenarios and was a good way to simulate what an ideal population distribution would look like. So I added the feature that one can decide what the initial population setup should look like.
+      </p>
+
+      <p class="blurb">
+         The simulation can be run <a class="project__link" target="_blank" href="http://mathuramg.com/ICMWork/Bored/GOL/index.html">here</a>
+      </p>
+
+      <p>
+          Code can be found <a class="project__link" target="_blank" href="https://github.com/MathuraMG/ICMWork/tree/master/Bored/GOL" >here</a>
+      </p>
+
+      <p>
+          Thanks to <a class="project__link" target="_blank" href="http://www.bitstorm.org/gameoflife/">http://www.bitstorm.org/gameoflife/</a>
+      </p>
+
+      <br>
+      <a class="project__back-link" href="/index.html"> &#x2190; Back to Home </a>
+      <br>
+
     </div>
-
-
-
-    <div id="body">
-      <hr id="headerLine">
-
-        <p class="blurb"> Tools Used : p5 </p>
-
-        <p>
-            A simulation of Game of Life by John Conway with a twist - you can decide on the input as you go. This simulation is a basic population exercise where the life of a cell depends on its neighbors.
-        </p>
-        <div class="vimeoVideo" >
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/149480133" width="500" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-        </div>
-        <p>
-            This was inspired by 2 things. One being the original Game of Life. The other was that I wanted to be able to simulate pseudo population scenarios. The algorithms which decide the growth and death of these cells follow a pattern of death by overpopulation or under population and growth due to dependent population. I felt that this closely depicted real life scenarios and was a good way to simulate what an ideal population distribution would look like. So I added the feature that one can decide what the initial population setup should look like.
-        </p>
-
-        <p class="blurb">
-           The simulation can be run <a style="text-decoration:none" href="http://mathuramg.com/ICMWork/Bored/GOL/index.html">here</a>
-        </p>
-
-        <p>
-            Code can be found <a style="text-decoration:none" href="https://github.com/MathuraMG/ICMWork/tree/master/Bored/GOL" >here</a>
-        </p>
-
-        <p>
-            Thanks to <a style="text-decoration:none" href="http://www.bitstorm.org/gameoflife/">http://www.bitstorm.org/gameoflife/</a>
-        </p>
-
-        <br>
-        <a class="backLink" href="../index.html"> &#x2190; Back to Home </a>
-        <br>
-
-
-<!--
-<iframe src="https://player.vimeo.com/video/142265212" width="500" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/142265212">Theramin</a> from <a href="https://vimeo.com/user43424443">Mathura</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
--->
-    </div>
+  </section>
 
 </body>
 </html>

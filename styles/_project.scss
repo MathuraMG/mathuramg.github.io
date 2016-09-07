@@ -15,6 +15,13 @@
   font-weight: 400;
 }
 
+.project__content-heading {
+  font-family: $secondary-font;
+  color: $secondary-heading-color;
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
+
 .project__blurb {
   font-style: italic;
 }
