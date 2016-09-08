@@ -1,3 +1,18 @@
+.about__image-container {
+  width: 40%; }
+
+.about__image {
+  width: 80%;
+  padding: 0 2rem; }
+
+.about__content {
+  width: 60%;
+  padding-right: 2rem; }
+
+.about__link {
+  text-decoration: none;
+  color: #ff706c; }
+
 .portfolio {
   margin: 0;
   padding: 0;
@@ -37,6 +52,16 @@
   overflow-y: scroll;
   display: flex;
   flex-direction: column; }
+
+.about {
+  width: 82%;
+  position: fixed;
+  margin-left: 18%;
+  top: 1rem;
+  bottom: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row; }
 
 .footer__list {
   display: flex;
