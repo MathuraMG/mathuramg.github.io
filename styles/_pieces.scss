@@ -30,7 +30,7 @@
 
 .pieces__image
 {
-  width: 95%;
+  width: 100%;
 }
 
 .pieces__tags
@@ -42,4 +42,10 @@
   position: relative;
   color: $secondary-heading-color;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  .pieces__item
+  {
+    width: 99%;
+  }
 }

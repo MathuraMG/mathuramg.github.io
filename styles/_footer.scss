@@ -17,3 +17,23 @@
   width: 100%;
   opacity: 0.8;
 }
+
+@media screen and (max-width: 768px) {
+
+  .footer__list {
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer__item {
+    width: 7%;
+  }
+
+  .footer__image
+  {
+    width: 90%;
+    opacity: 0.8;
+  }
+
+}

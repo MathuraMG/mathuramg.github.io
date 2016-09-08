@@ -54,3 +54,25 @@
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+  }
+  .nav-footer-container {
+    width: 100%;
+  }
+  .projects, .project, .pieces, .about {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+  .nav, .footer {
+    height: inherit;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+  }
+}

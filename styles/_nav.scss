@@ -63,3 +63,24 @@
     color: $nav-hover-color;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav__items-category
+  {
+    display: none;
+  }
+  .nav__items-pages
+  {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  .nav__name {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    float: inherit;
+  }
+
+}

@@ -60,3 +60,9 @@
   color:$primary-heading-color;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    margin: 0;
+  }
+}
