@@ -7,7 +7,8 @@
 
 .about__content {
   width: 60%;
-  margin-top: 0; }
+  margin-top: 0;
+  padding-right: 2rem; }
 
 .about__link {
   text-decoration: none;
@@ -248,6 +249,18 @@
 .project__image {
   width: 100%; }
 
+.project__image-small {
+  width: 33%;
+  display: inline-block; }
+
+.project__image-medium {
+  width: 49%;
+  display: inline-block; }
+
+.project__image-small-container {
+  width: 100%;
+  display: block; }
+
 .project__link {
   text-decoration: none;
   color: #ff706c; }
@@ -264,7 +277,11 @@
 
 @media screen and (max-width: 768px) {
   .project-container {
-    margin: 0; } }
+    margin: 0; }
+
+  .project__image-small {
+    width: 49%;
+    display: inline-block; } }
 .projects__list {
   flex-direction: column;
   margin-right: 2rem; }
