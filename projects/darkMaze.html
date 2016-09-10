@@ -2,90 +2,116 @@
 <head>
 
     <title>MathuraMG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style.css" >
-    <link rel="stylesheet" href="../about.css" >
-    <link rel="stylesheet" href="../projects.css" >
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/app.css" >
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
 
 </head>
 <body>
-    <div id="header">
-      <!-- MENU BAR -->
-      <a href="../index.html" style="text-decoration:none">
-        <div class="headerName">
-          <span id="firstName"> Mathura</span> <span id="surName">Govindarajan</span>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png"></img>
         </div>
       </a>
-      <div class="headerMenu">
-        <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>
-        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
-        <a href="../about.html" class="menuTitle">About</a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" alt="vimeo logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" alt="instagram logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" alt="github logo"></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Dark Maze </h2>
+      <h5 class="project__sub-heading">BCI, Physical computing, Programming</h5>
+      <p class="project__blurb">
+        Tools Used : Arduino, openBCI, Processing
+        <br>
+        In collaboration with Jordan Frand, Christina Choi and Wangshu Sun.
+        <br>
+        A tilt maze controlled by the users EEG and EMG signals.
+      </p>
+
+      <div class="project__video-container" >
+          <iframe class="project__video" src="https://player.vimeo.com/video/159516488?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-    </div>
+      <br>
 
+      <img class="project__image" src="../assets/darkMaze/head.jpg"
+      alt="head gear provided by openBCI. Contains nodes that act as sensors on users skull."></img>
+      <br>
 
+      <p>
+        This project was an exploration of using the openBCI kit to create meaningful interactions.
+      </p>
+      <p>
+        The openBCI software and hardware has the potential to measure EEG, EMG and ECG waves from the human body. We used this information to control a <a class="project__link" target="_blank" href="https://en.wikipedia.org/wiki/Labyrinth_(marble_game)">tilt maze</a>. EMG signals from blinking controlled tilting the maze left and right. Accelerometer information from titling the head forward and backward controlled tilting the maze front and back. Entering a focused state of mind triggered high amplitude alpha waves which would turn on the lights in the maze.
+      </p>
+      <p>
+        Players need to focus to see the maze and also use their memory to remember the path when they are navigating the maze.
+      </p>
 
-    <div id="body">
-      <hr id="headerLine">
+      <img class="project__image" src="../assets/darkMaze/draw.jpg"
+      alt="output produced by user who tried to draw using the head set"></img>
 
+      <p>
+          We made the prototype for the maze in Unity and controlled it with the modified openBCI script that pulled the required signals. We playtested this prototype at the NeuroTechNYC Meetup.
+          During the session, players expressed interest to draw using our openBCI script, so we tried that as well. Here is a video from the session.
+      </p>
 
-        <p >
-            A tilt maze controlled by the users EEG and EMG signals.
-        </p>
-
-        <div class="vimeoVideo" >
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/159516488?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <br>
-
-
-        <p class="blurb"> Tools Used : Arduino, openBCI, Processing </p>
-        <p class="blurb"> In collaboration with Jordan Frand, Christina Choi and Wangshu Sun  </p class="blurb">
-
-        <img class="projectImg" src="../assets/darkMaze/head.jpg"></img>
-        <br>
-
-        <p>
-            This project was an exploration of using the openBCI kit to create meaningful interactions.
-          </p>
-          <p>
-            The openBCI software and hardware has the potential to measure EEG, EMG and ECG. We used this in the following manner to control a tilt maze, blinks triggered EMG signals which help navigate the moves left and right. Titling the head forward and backward triggered the accelerometer which moved the ball forward and backward. And finally, focusing triggered high amplitude alpha waves which would turn on the lights in the maze.
-          </p>
-          <p>
-            This made our participants focus to see the maze and also use their memory to remember the path when they were not focusing.
-        </p>
-
-        <img class="projectImg" src="../assets/darkMaze/draw.jpg"></img>
-
-        <p>
-            We made the prototype for the maze in Unity and controlled it with the modified openBCI code that pulled the required signals. We tested it out in the NeuroTechNYC Meetup.
-            During user testing,we had people who wished to try drawing with the openBCI code – so we tried the same as well. Below is a video from the user testing.
-        </p>
-
-        <div class="vimeoVideo" >
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/157092570?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-        </div>
-        <p>
-            Post user testing, we started building our physical maze and controlling motors with the signals from the openBCI hardware.
-        </p>
-        <img class="projectImg" src="../assets/darkMaze/maze.jpg"></img>
-        <br>
-        <a class="backLink" href="../index.html"> &#x2190; Back to Home </a>
-        <br>
-
-
-
-
+      <div class="project__video-container" >
+          <iframe class="project__video" src="https://player.vimeo.com/video/157092570?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+      </div>
+      <p>
+          After user testing, we started building our physical maze and controlling motors to tilt the maze with the signals from the openBCI hardware.
+      </p>
+      <img class="project__image" src="/assets/darkMaze/maze.jpg"
+      alt="tilt maze and circuitry below it"></img>
+      <br>
+      <a class="project__back-link" href="/index.html"> &#x2190; Back to Home </a>
+      <br>
 
 <!--
 <iframe src="https://player.vimeo.com/video/142265212" width="500" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/142265212">Theramin</a> from <a href="https://vimeo.com/user43424443">Mathura</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 -->
     </div>
+  </section>
 
 </body>
 </html>

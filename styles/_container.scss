@@ -1,0 +1,78 @@
+.portfolio {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer-container {
+  background-color: $nav-color;
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+}
+
+.footer {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.projects, .pieces {
+  width: 82%;
+  position: fixed;
+  margin-left: 18%;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.project {
+  width: 82%;
+  position: fixed;
+  margin-left: 18%;
+  top: 1rem;
+  bottom: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  width: 82%;
+  position: fixed;
+  margin-left: 18%;
+  top: 1rem;
+  bottom: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+  }
+  .nav-footer-container {
+    width: 100%;
+  }
+  .projects, .project, .pieces, .about {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+  .nav, .footer {
+    height: inherit;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+  }
+}

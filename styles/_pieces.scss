@@ -1,0 +1,51 @@
+.pieces__item
+{
+  width: 49.6%;
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  & + & {
+    margin-bottom: 2rem;
+  }
+}
+
+.pieces__list {
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.pieces__title
+{
+  width: 85%;
+  font-family: $primary-font;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 1.2rem;
+  &:hover {
+    color: $content-hover-color;
+  }
+}
+
+.pieces__image
+{
+  width: 100%;
+}
+
+.pieces__tags
+{
+  width: 85%;
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  color: $secondary-heading-color;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  .pieces__item
+  {
+    width: 99%;
+  }
+}

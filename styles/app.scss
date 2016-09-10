@@ -1,0 +1,26 @@
+@import 'variables';
+
+@import 'about';
+@import 'container';
+@import 'footer';
+@import 'nav';
+@import 'pieces';
+@import 'project';
+@import 'projects';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+h1,h2,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: $secondary-font;
+  font-size: 1rem;
+  color: $para-color;
+}

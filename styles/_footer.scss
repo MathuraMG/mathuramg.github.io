@@ -1,0 +1,39 @@
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1.8rem;
+}
+
+.footer__item {
+  width: 15%;
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding-right: 1.2rem;
+}
+
+.footer__image
+{
+  width: 100%;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer__list {
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer__item {
+    width: 7%;
+  }
+
+  .footer__image
+  {
+    width: 90%;
+    opacity: 0.8;
+  }
+
+}

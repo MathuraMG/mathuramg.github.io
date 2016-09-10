@@ -1,0 +1,29 @@
+.about__image-container {
+  width: 40%;
+}
+
+.about__image {
+  width: 80%;
+  padding: 0 2rem;
+}
+
+.about__content {
+  width: 60%;
+  margin-top: 0;
+  padding-right: 2rem;
+}
+
+.about__link {
+  text-decoration: none;
+  color: $primary-heading-color;
+}
+
+@media screen and (max-width: 480px) {
+  .about__image-container {
+    width: 100%;
+  }
+  .about__content {
+    width: 80%;
+    padding: 0 2rem;
+  }
+}

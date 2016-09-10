@@ -2,71 +2,97 @@
 <head>
 
     <title>MathuraMG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="about.css" >
-    <link rel="stylesheet" href="projects.css" >
+    <link rel="stylesheet" href="styles/app.css" >
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <script src="filter.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 </head>
 <body>
-    <div id="header">
-      <!-- MENU BAR -->
-      <div class="headerName">
-        <a id="firstName"> Mathura</a> <a id="surName">Govindarajan </a>
-      </div>
-      <div class="headerMenu">
-        <a href="index.html" class="menuTitle ">Portfolio</a>
-        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
-        <a href="#" class="menuTitle menuTitleHighlighted">About</a>
-      </div>
+  <div class="portfolio">
+
+    <!-- MENU BAR -->
+    <div class="nav-footer-container">
+      <nav class="nav" role="navigation" title="main-navigation">
+
+        <a href="/index.html" style="text-decoration:none">
+          <div class="nav__name">
+            <img class="nav__logo" src="\assets\mathura.png"></img>
+          </div>
+        </a>
+
+        <ul class="nav__items-pages" title="page navigation">
+          <li class="nav__item">
+            <a href="/index.html" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>  
+          </li>
+          <li class="nav__item">
+            <a href="/about.html" class="nav__link nav__link--selected">About</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://vimeo.com/user43424443" target="_blank">
+              <img class="footer__image" src="assets/vimeo.svg" alt="vimeo logo"></img>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://www.instagram.com/mathuramg/" target="_blank">
+              <img class="footer__image" src="assets/instagram.svg" alt="instagram logo"></img>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://github.com/mathuramg" target="_blank">
+              <img class="footer__image" src="assets/github.svg" alt="github logo"></img>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
 
-    <div id="body">
-        <hr id="headerLine">
-       <div id="aboutImgDiv">
-        <img id="aboutImg" src="assets/me.jpg"></img>
-       </div>
-       <div id="aboutContentDiv">
-        <l id="aboutContent">
-            <br>
-            <br>
-            Hi! I am Mathura, currently a graduate student at New York University, in the <a href="https://tisch.nyu.edu/itp" class="aboutLink" >Interactive telecommunication Program </a>
-            <br>
-            <br>
+    <section class="about" role="main">
+      <div class="about__image-container">
+        <img class="about__image" src="assets/me.jpg" alt="photograph of mathura govindarajan"></img>
+      </div>
+      <p class="about__content">
 
-            I completed my undergraduate studies from <a href="http://www.nitk.ac.in/" class="aboutLink" > National Institute of Technology, Surathkal, India </a> in Electronics and Communication Engineering. My interests in the four years there took me from working on signal processing to theatre productions.
-            <br>
-            <br>
-            Overall, I am very enthusiastic when it comes to learning new things. More so, I'm always looking out for things that help me bridge the gap between art, science and technology.
-            <br>
-            <br>
-            You can find my resume <a href="assets/Resume_Mathura.pdf" target="_blank" class="aboutLink" > here </a> for more information.
-            <br>
-            <br>
-            If you like my work, or have any questions or comments, I would love to hear from you. Shoot me an email at <a href="mailto:mmg542@nyu.edu" class="aboutLink" target="_blank"> mmg542@nyu.edu</a>
-            <br>
-            <br>
-            <br>
-        </l>
-       </div>
-    </div>
-    <br><br>
-    <hr id = "footerLine">
-    <div id="footer">
-      <l id="footerNotes">
-        <a class="linkPage" href="https://github.com/mathuramg" target="_blank">
-          <img class="infoImg" src="assets/github.png" ></img>
-        </a>
-        <a class="linkPage" href="https://vimeo.com/user43424443" target="_blank">
-          <<img class="infoImg" src="assets/vimeo.png" ></img>
-        </a>
-      </l>
-    </div>
+        Hi! I am Mathura, currently a graduate student at New York University, in the <a href="https://tisch.nyu.edu/itp" class="about__link" target="_blank">Interactive telecommunication Program </a>
+        <br>
+        <br>
+
+        I completed my undergraduate studies from <a href="http://www.nitk.ac.in/" class="about__link" target="_blank"> National Institute of Technology, Surathkal, India </a> in Electronics and Communication Engineering. My interests in the four years there took me from working on signal processing to theatre productions.
+        <br>
+        <br>
+        My current interests revolve around assistive technology, developing accessible software, fabrication, coffee and messing around with physical computing.
+        <br>
+        <br>
+        Overall, I am very enthusiastic when it comes to learning new things. More so, I'm always looking out for things that help me bridge the gap between art, science and technology.
+        <br>
+        <br>
+        You can find my resume <a href="assets/Resume_Mathura.pdf" target="_blank" class="about__link" > here </a> for more information.
+        <br>
+        <br>
+        If you like my work, or have any questions or comments, I would love to hear from you. Shoot me an email at <a href="mailto:mmg542@nyu.edu" class="about__link" target="_blank"> mmg542@nyu.edu</a>
+        <br>
+      </p>
+
+    </section>
+
+    <br>
+  </div>
 
 </body>
 </html>

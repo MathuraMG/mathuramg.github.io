@@ -1,31 +1,20 @@
 function changeCategory(type){
-  //console.log('hi');
-  if(type =='programming'){
-    var projects = $('.portfolioHeader').css("display","none");
-    var projects = $('.tag-programming').css("display","inline-block");
-    //change category to yellow
-    $('.category-tag').removeClass('selected-category');
-    $('.category-tag-programming').addClass('selected-category');
+  if(type =='all'){
+    var projects = $('.projects__item').css("display","inline-flex");
+    //change category to selected
+    $('.nav__category').removeClass('nav__category--selected');
+    $('.nav__category-all').addClass('nav__category--selected');
   }
-  else if(type =='physcomp'){
-    var projects = $('.portfolioHeader').css("display","none");
-    var projects = $('.tag-physcomp').css("display","inline-block");
-    //change category to yellow
-    $('.category-tag').removeClass('selected-category');
-    $('.category-tag-physcomp').addClass('selected-category');
-  }
-  else if(type =='animation'){
-    var projects = $('.portfolioHeader').css("display","none");
-    var projects = $('.tag-animation').css("display","inline-block");
-    //change category to yellow
-    $('.category-tag').removeClass('selected-category');
-    $('.category-tag-animation').addClass('selected-category');
-  }
-  else if(type =='all'){
-    var projects = $('.portfolioHeader').css("display","inline-block");
-    //change category to yellow
-    $('.category-tag').removeClass('selected-category');
-    $('.category-tag-all').addClass('selected-category');
+
+  else {
+    var projectTag = '.tag-' + type;
+    var navTag = '.nav__category-' + type;
+
+    var projects = $('.projects__item').css("display","none");
+    var projects = $(projectTag).css("display","inline-flex");
+    //change category to selected
+    $('.nav__category').removeClass('nav__category--selected');
+    $(navTag).addClass('nav__category--selected');
   }
 }
 function load(){

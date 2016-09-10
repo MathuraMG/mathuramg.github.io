@@ -2,80 +2,110 @@
 <head>
 
     <title>MathuraMG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style.css" >
-    <link rel="stylesheet" href="../about.css" >
-    <link rel="stylesheet" href="../projects.css" >
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/app.css" >
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
 
 </head>
 <body>
-    <div id="header">
-      <!-- MENU BAR -->
-      <a href="../index.html" style="text-decoration:none">
-        <div class="headerName">
-          <span id="firstName"> Mathura</span> <span id="surName">Govindarajan</span>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png"></img>
         </div>
       </a>
-      <div class="headerMenu">
-        <a href="../index.html" class="menuTitle menuTitleHighlighted">Portfolio</a>
-        <a href="http://mathuramg.com/itp" class="menuTitle">Blog</a>
-        <a href="../about.html" class="menuTitle">About</a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>  
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" alt="vimeo logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" alt="instagram logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" alt="github logo"></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Capacitive Theremin </h2>
+      <h5 class="project__sub-heading">Physical computing</h5>
+      <p class="project__blurb">
+        Tools Used : Arduino, p5
+        <br>
+        Rediscovering the theremin using capacitive touch to sense users hand movement.
+      </p>
+
+      <div class="project__video-container" >
+          <iframe class="project__video" src="https://player.vimeo.com/video/156799127?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
+
+      <p>
+          This project was inspired mainly by my curiosity surrounding capacitive touch. It takes into consideration the capacity of the human touch to cause a voltage change.
+
+          While initially working on capacitive sensing, I came across theremin and worked on a smaller version before delving into the current model.
+          The theremin is one of the earliest electronic musical instruments where a performer can control colume and pitch without any actual
+          contanct with the instrument itself.
+      </p>
+
+      <img class="project__image" src="/assets/theremin/Theramin.jpg"
+      alt="capacitive theremin where sensors are covered with an owl scarf"></img>
+
+      <p>
+        In this rendition of the theremin, the volume was controlled using horizontal hand movement
+        which was detected by the ultrasonic sensor in the side.
+        The pitch itself was controlled using the capacitive brass plates. Each plate was tied to a different
+        frequency. As users hand got closer to one particular plate, a frequency would be triggered.
+      </p>
+      <img class="project__image" src="/assets/theremin/WorkingOfTheremin.png"
+      alt="stripped down theremin with markings of various components - capacitive sensor, cable to arduino and proximity sensor"></img>
+
+      <p>
+          Below is a video of the initial prototype. This prototype had two plates, one for frequency and the other
+          for volume.
+          They both increased as the users hand got closer to the respective plates.
+      </p>
+
+      <div class="project__video-container" >
+          <iframe class="project__video" src="https://player.vimeo.com/video/142265212?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+      </div>
+
+      <br>
+      <a class="project__back-link" href="/index.html"> &#x2190; Back to Home </a>
+      <br>
+
     </div>
-
-
-
-    <div id="body">
-      <hr id="headerLine">
-
-
-        <p >
-            A theremin made out of brass plates, using their capacitive nature to detect change in voltage due to human touch.
-        </p>
-
-        <div class="vimeoVideo" >
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/156799127?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <br>
-
-
-        <p class="blurb"> Tools Used : Arduino </p>
-
-        <p>
-            This project was inspired mainly by my curiosity surrounding capacitive touch. It takes into consideration the capacity of the human touch to cause a voltage change.
-
-            While initially working on capacitive sensing, I came across theremin and worked on a smaller version before delving into the current model.
-        </p>
-
-         <img class="projectImg" src="../assets/theremin/Theramin.jpg"></img>
-
-        <img class="projectImg" src="../assets/theremin/WorkingOfTheremin.png"></img>
-
-        <p>
-            Below is a video of the initial prototype
-        </p>
-
-        <div class="vimeoVideo" >
-            <iframe class="projectVideo" src="https://player.vimeo.com/video/142265212?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-        </div>
-
-        <br>
-        <a class="backLink" href="../index.html"> &#x2190; Back to Home </a>
-        <br>
-
-
-
-
-
-<!--
-<iframe src="https://player.vimeo.com/video/142265212" width="500" height="288" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/142265212">Theramin</a> from <a href="https://vimeo.com/user43424443">Mathura</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
--->
-    </div>
+  </section>
 
 </body>
 </html>
