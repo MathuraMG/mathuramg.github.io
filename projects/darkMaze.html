@@ -27,7 +27,7 @@
           <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
         </li>
         <li class="nav__item">
-          <a href="/fineArt.html" class="nav__link">Fine Art</a>
+          <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>
         </li>
         <li class="nav__item">
           <a href="about.html" class="nav__link">About</a>
@@ -81,25 +81,25 @@
         This project was an exploration of using the openBCI kit to create meaningful interactions.
       </p>
       <p>
-        The openBCI software and hardware has the potential to measure EEG, EMG and ECG. We used this in the following manner to control a tilt maze, blinks triggered EMG signals which help navigate the moves left and right. Titling the head forward and backward triggered the accelerometer which moved the ball forward and backward. And finally, focusing triggered high amplitude alpha waves which would turn on the lights in the maze.
+        The openBCI software and hardware has the potential to measure EEG, EMG and ECG waves from the human body. We used this information to control a <a class="project__link" target="_blank" href="https://en.wikipedia.org/wiki/Labyrinth_(marble_game)">tilt maze</a>. EMG signals from blinking controlled tilting the maze left and right. Accelerometer information from titling the head forward and backward controlled tilting the maze front and back. Entering a focused state of mind triggered high amplitude alpha waves which would turn on the lights in the maze.
       </p>
       <p>
-        This made our participants focus to see the maze and also use their memory to remember the path when they were not focusing.
+        Players need to focus to see the maze and also use their memory to remember the path when they are navigating the maze.
       </p>
 
       <img class="project__image" src="../assets/darkMaze/draw.jpg"
       alt="output produced by user who tried to draw using the head set"></img>
 
       <p>
-          We made the prototype for the maze in Unity and controlled it with the modified openBCI code that pulled the required signals. We tested it out in the NeuroTechNYC Meetup.
-          During user testing,we had people who wished to try drawing with the openBCI code – so we tried the same as well. Below is a video from the user testing.
+          We made the prototype for the maze in Unity and controlled it with the modified openBCI script that pulled the required signals. We playtested this prototype at the NeuroTechNYC Meetup.
+          During the session, players expressed interest to draw using our openBCI script, so we tried that as well. Here is a video from the session.
       </p>
 
       <div class="project__video-container" >
           <iframe class="project__video" src="https://player.vimeo.com/video/157092570?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
       </div>
       <p>
-          Post user testing, we started building our physical maze and controlling motors with the signals from the openBCI hardware.
+          After user testing, we started building our physical maze and controlling motors to tilt the maze with the signals from the openBCI hardware.
       </p>
       <img class="project__image" src="/assets/darkMaze/maze.jpg"
       alt="tilt maze and circuitry below it"></img>

@@ -281,6 +281,10 @@
 
   .project__image-small {
     width: 49%;
+    display: inline-block; }
+
+  .project__image-medium {
+    width: 100%;
     display: inline-block; } }
 .projects__list {
   flex-direction: column;

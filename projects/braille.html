@@ -1,0 +1,116 @@
+<html>
+<head>
+
+    <title>MathuraMG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/app.css" >
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
+
+</head>
+<body>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png"></img>
+        </div>
+      </a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" alt="vimeo logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" alt="instagram logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" alt="github logo"></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Braille Display </h2>
+      <h5 class="project__sub-heading"> Accessibility, Physical Computing, Programming</h5>
+      <p class="project__blurb">
+        Tools Used : NVDA, Arduino
+        <br>
+        In collabaration with Jason Beck, Jared Friedman, Satbir Multani
+        <br>
+        A look into the prototyping process of making refreshible braille displays more affordable. - <a class="project__link" target="_blank" href="https://itp.nyu.edu/classes/aatpblv-spring2016/mathura-govindarajan/">detailed process documentation</a>
+      </p>
+
+      <p>
+        A refreshable braille display is a device for displaying braille characters, usually by means of round-tipped pins raised through holes in a flat surface. Blind computer/mobile users who cannot use a computer monitor can use it to read text output.
+        <br>
+        While braille displays are an extremely useful tool, they can be inaffordable. We attempted to tackle this problem by making a prototype of a cheaper braille display.
+      </p>
+
+
+      <h4 class="project__content-heading">Hardware - Version 1</h4>
+      <p>
+        A single braille cell was built with 2 motors and discs attached to them. The motors were connected to a computer via an Arduino microcontroller. The computer sent signals to the motors, which spun the discs to the appropriate positions to form braille letters.
+      </p>
+      <p>
+        Here are the designs of each disc and the setup.
+      </p>
+
+      <img class="project__image" src="/assets/braille/braille_v1_1.png" alt="screen capture of 3D model of a single disc" ></img>
+      <br>
+      <br>
+
+      <img class="project__image" src="/assets/braille/braille_v1_2.png" alt="screen capture of 3D model of a single disc" ></img>
+      <br>
+
+      <h4 class="project__content-heading">Hardware - Version 2</h4>
+      <p>
+        The second version consisted of 6 pins which rested inside a housing. The housing also contained space for shafts that pushed the pins up or down based on the letter recieved from the computer. The shafts rotated to the appropriate position when a letter was recieved and this ensured that the right set of pins were pushed up to form the braille letter.
+      </p>
+      <p>
+        Below are models of a single braille cell.
+      </p>
+      
+      <img class="project__image" src="/assets/braille/braille.png" alt="3d designs of the pins, housing and the shafts"></img>
+
+      <h4 class="project__content-heading">Software</h4>
+      <p>
+        The input was recieved through serial communication from the computer to the arduino that was connected to the motors. We modified and used NVDA, the open source screen reader to send the input to the serial port.
+      </p>
+
+      <br>
+      <a class="project__back-link" href="/index.html"> &#x2190; Back to Home </a>
+      <br>
+
+    </div>
+  </section>
+
+</body>
+</html>
