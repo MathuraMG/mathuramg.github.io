@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+
+  <title>MathuraMG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/styles/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png" alt="portfolio logo - mathura written in tamil and english"></img>
+        </div>
+      </a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>
+        </li>
+        <li class="nav__item">
+          <a href="/about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" alt="vimeo logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" alt="instagram logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" alt="github logo"></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Beat-Box </h2>
+      <h5 class="project__sub-heading">Accessibility, Programming</h5>
+
+      <p class="project__blurb">
+        <br> In collaboration with Akshay Iyer, Lisa Song and Yue Zhang
+        <br> A data management app to coallate students data and analyse their progress in beat boxing. The students are visually challenged and use beat boxing as an additional aide to speech therapy.
+      </p>
+
+      <img class="project__image-medium" src="/assets/beatbox/logo.png" alt="beat box app logo"></img>
+
+      <p>
+        B.E.A.T NYC is a nonprofit organization in New York City, which operates extracurricular programs for the urban youth. One of their programs deals with assisting the blind and the visually impaired in speech therapy using a Beat Boxing program titles,
+        ‘Beat Rockers’. This music program involves teaching beatboxing to the blind and visually impaired. As time progresses, this music becomes an enabler, to new forms of expression. According to the Beat Rockers Program ‘Music Becomes Language’ .
+      </p>
+      <p>
+        <a class="project__link" target="_blank" href="https://www.beatnyc.org/programs/beat-rockers/">You
+        can check out more about their program here.</a>
+      </p>
+      <h4 class="project__content-heading">Project Pitch</h4>
+      <p>
+        With the advancements in time, the B.E.A.T Rockers program has evolved from being just a music program to a medium that assists speech therapy. To ensure smooth communication of data between the B.E.A.T Rockers the Speech Therapist and the immediate family
+        of the students, it becomes extremely important to understand the data, analyze it, and track progress for each student, with confidentiality.
+        <p>
+          In order to achieve this, we, along with the assistance of the beat rockers, created ‘Beat BOX’ a Data
+        Base Management System that would assist the speech therapist, the parents and all family members to track and understand the students progress.
+      </p>
+      </p>
+      <img class="project__image" src="/assets/beatbox/beatbox_mockup.png" alt="mock up of user using the beat-box app"></img>
+      <p>
+        In short, this is a,
+        <ul class="project__list" title="project stack">
+          <li>A data management tool – for teachers, therapists, and family</li>
+          <li>To help keep track of students progress</li>
+          <li>To formalize and share lesson plans easily</li>
+        </ul>
+      </p>
+      <img class="project__image" src="/assets/beatbox/screens.png" alt="speakers used for experimenting with a bag containing pyrocystis placed on top."></img>
+
+      <h4 class="project__content-heading">Process Summary</h4>
+
+      <p>
+      Below are all the screen developed for the app
+      </p>
+      <img class="project__image" src="/assets/beatbox/UIAll.png" alt="speakers used for experimenting with a bag containing pyrocystis placed on top."></img>
+
+      <h4 class="project__content-heading">Initial research/secondary research</h4>
+
+
+      <p>
+        Based on our research and feedback from our prototypes, a working model of a database management system was created and established which helped the user in simplifying the process of storing, retrieving and tracking student data. This application
+        ensures data encryption and ensures that all confidential student data remains unavailable unless an authorized user enters his authentication details.
+      </p>
+      <h4 class="project__content-heading">Process Outline</h4>
+
+      <p>
+        Keeping the functionalities required in mind, we made the below site map.
+      </p>
+
+      <img class="project__image" src="/assets/beatbox/sitemap.png" alt="speakers used for experimenting with a bag containing pyrocystis placed on top."></img>
+
+      <p> Finally the app was built with the following stack</p>
+        <ul class="project__list" title="project stack">
+          <li>Rails MVC</li>
+          <li>Bootstrap for frontend</li>
+          <li>postgres DB</li>
+        </ul>
+
+        <p>
+        The app is currently in its beta phase with the users.
+        <a class="project__link" target="_blank" href="https://github.com/MathuraMG/BeatRockers">The code for the app is available here</a>
+      </p>
+
+
+      <br>
+      <a class="project__back-link" href="../index.html"> &#x2190; Back to Home </a>
+      <br>
+
+
+    </div>
+  </section>
+</body>
+
+</html>

@@ -357,7 +357,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif; }
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #777777; }
 
 h1, h2, h3, h4, h5 {
   padding: 0;

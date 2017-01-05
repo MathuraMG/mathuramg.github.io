@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+
+  <title>MathuraMG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/styles/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="nav-footer-container">
+    <nav class="nav" role="navigation" title="main-navigation">
+
+      <a href="/" style="text-decoration:none">
+        <div class="nav__name">
+          <img class="nav__logo" src="\assets\mathura.png" alt="portfolio logo - mathura written in tamil and english"></img>
+        </div>
+      </a>
+
+      <ul class="nav__items-pages" title="page navigation">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link--selected">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://mathuramg.com/itp" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="http://renzuru.herokuapp.com/" target="_blank" class="nav__link">Fine Art</a>
+        </li>
+        <li class="nav__item">
+          <a href="/about.html" class="nav__link">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://vimeo.com/user43424443" target="_blank">
+            <img class="footer__image" src="/assets/vimeo.svg" alt="vimeo logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.instagram.com/mathuramg/" target="_blank">
+            <img class="footer__image" src="/assets/instagram.svg" alt="instagram logo"></img>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/mathuramg" target="_blank">
+            <img class="footer__image" src="/assets/github.svg" alt="github logo"></img>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <section class="project">
+    <div class="project-container">
+      <h2 class="project__heading"> Can My Computer Draw</h2>
+      <h5 class="project__sub-heading">Programming</h5>
+
+      <p class="project__blurb">
+        <br> An exploration of useing machine learning to recreate hand drawn mandalas
+      </p>
+
+      <p>
+        This project started as an attempt to recreate a hand drawn world map with mandalas with the help of a computer.
+      </p>
+      <h4 class="project__content-heading">Original Drawing</h4>
+      <img class="project__image" src="/assets/machinelearning/original.jpg" alt="original hand drawn world map drawing"></img>
+      <h4 class="project__content-heading">Final Result</h4>
+      <p>
+        In order to recreate this drawing, but still maintain the flow of each induvidual mandala, the machine was trained on the drawings. Shown below is the final output.
+      <p>
+        <img class="project__image" src="/assets/machinelearning/final.jpg" alt="final world map drawing generate using machine learning"></img>
+      </p>
+      <h4 class="project__content-heading">Process Details</h4>
+      <p>
+        To train the machine, the first step required was to create and "input language" for the input mandalas and a tool to create the inputs which the machine can be trained on.
+      </p>
+      <a class="project__link" target="_blank" href="https://www.beatnyc.org/programs/beat-rockers/">Tool created to get inputs - MATHURA PUT LINK</a>
+      <p>
+        The tool mirrors the mouse movement on a circular axis. The movement of the mouse was recorded and used as the input language. For instance, the letter 'a' was recorded if the mouse moved one pixel to the right and the letter 'd' was recorded if the mouse moved one pixel up.
+      </p>
+
+      <img class="project__image-small" src="/assets/machinelearning/method1.png" alt="example of movement recording a letter"></img>
+      <img class="project__image-small" src="/assets/machinelearning/method2.png" alt="example of movement recording a letter"></img>
+      <p> Finally, ~250 mandalas were drawn and each mandala's input was recorded as a paragraph. This came to a toal of 0.2 million characters.
+      </p>
+      <p>
+        This was then trained using <a class="project__link" target="_blank" href="https://github.com/sherjilozair/char-rnn-tensorflow">char-rnn with ternsor flow</a> with 3 layers.
+      </p>
+      <img class="project__image-small" src="/assets/machinelearning/out8.png" alt="sample mandala output"></img>
+      <img class="project__image-small" src="/assets/machinelearning/out2.png" alt="sample mandala output"></img>
+      <img class="project__image-small" src="/assets/machinelearning/out3.png" alt="sample mandala output"></img>
+      <img class="project__image-small" src="/assets/machinelearning/out4.png" alt="sample mandala output"></img>
+      <img class="project__image-small" src="/assets/machinelearning/out5.png" alt="sample mandala output"></img>
+      <img class="project__image-small" src="/assets/machinelearning/out6.png" alt="sample mandala output"></img>
+
+      <p>
+        The code for the char-rnn algorithm is by
+        <a class="project__link" target="_blank" href="https://github.com/sherjilozair/char-rnn-tensorflow">sherjilozair</a> and the code for the <a class="project__link" target="_blank" href="https://github.com/MathuraMG/learning-machine/tree/master/week7/frontend">frontend can be found here</a> .
+      </p>
+
+
+      <br>
+      <a class="project__back-link" href="../index.html"> &#x2190; Back to Home </a>
+      <br>
+
+
+    </div>
+  </section>
+</body>
+
+</html>
