@@ -64,7 +64,7 @@
       <h5 class="project__sub-heading">Programming</h5>
 
       <p class="project__blurb">
-        <br> An exploration of useing machine learning to recreate hand drawn mandalas
+        <br> An exploration of using machine learning to recreate hand drawn mandalas
       </p>
 
       <p>
@@ -73,26 +73,25 @@
       <h4 class="project__content-heading">Original Drawing</h4>
       <img class="project__image" src="/assets/machinelearning/original.jpg" alt="original hand drawn world map drawing"></img>
       <h4 class="project__content-heading">Final Result</h4>
+      <img class="project__image" src="/assets/machinelearning/final.jpg" alt="final world map drawing generate using machine learning"></img>
       <p>
-        In order to recreate this drawing, but still maintain the flow of each induvidual mandala, the machine was trained on the drawings. Shown below is the final output.
-      <p>
-        <img class="project__image" src="/assets/machinelearning/final.jpg" alt="final world map drawing generate using machine learning"></img>
+        In order to recreate this drawing, a machine learning algorithm was run against a set of mandala drawings that I created for this project.
       </p>
       <h4 class="project__content-heading">Process Details</h4>
       <p>
-        To train the machine, the first step required was to create and "input language" for the input mandalas and a tool to create the inputs which the machine can be trained on.
+        To facilitate the machine learning process, <a class="project__link" target="_blank" href="https://www.beatnyc.org/programs/beat-rockers/">I created a tool - MATHURA PUT LINK</a> that allowed me to quickly generate mandalas for training.
       </p>
-      <a class="project__link" target="_blank" href="https://www.beatnyc.org/programs/beat-rockers/">Tool created to get inputs - MATHURA PUT LINK</a>
+
       <p>
-        The tool mirrors the mouse movement on a circular axis. The movement of the mouse was recorded and used as the input language. For instance, the letter 'a' was recorded if the mouse moved one pixel to the right and the letter 'd' was recorded if the mouse moved one pixel up.
+        The tool mirrors the mouse movement on a circular axis. The movement of the mouse was recorded and used as the input language to the machine learning algorithm. This way, the machine learning language automatically captured the concept of circular symmetry. For instance, the letter 'a' was recorded if the mouse moved one pixel to the right and the letter 'd' was recorded if the mouse moved one pixel up.
       </p>
 
       <img class="project__image-small" src="/assets/machinelearning/method1.png" alt="example of movement recording a letter"></img>
       <img class="project__image-small" src="/assets/machinelearning/method2.png" alt="example of movement recording a letter"></img>
-      <p> Finally, ~250 mandalas were drawn and each mandala's input was recorded as a paragraph. This came to a toal of 0.2 million characters.
+      <p> Finally, around 250 mandalas were drawn and each mandala's input was recorded as a paragraph. This came to a total of 0.2 million characters.
       </p>
       <p>
-        This was then trained using <a class="project__link" target="_blank" href="https://github.com/sherjilozair/char-rnn-tensorflow">char-rnn with ternsor flow</a> with 3 layers.
+        This data was fed to a training algorithm called <a class="project__link" target="_blank" href="https://github.com/sherjilozair/char-rnn-tensorflow">char-rnn with ternsor flow</a> with 3 layers. This is a machine learning algorithm commonly used to generate dynamic text using computer.
       </p>
       <img class="project__image-small" src="/assets/machinelearning/out8.png" alt="sample mandala output"></img>
       <img class="project__image-small" src="/assets/machinelearning/out2.png" alt="sample mandala output"></img>
@@ -100,12 +99,6 @@
       <img class="project__image-small" src="/assets/machinelearning/out4.png" alt="sample mandala output"></img>
       <img class="project__image-small" src="/assets/machinelearning/out5.png" alt="sample mandala output"></img>
       <img class="project__image-small" src="/assets/machinelearning/out6.png" alt="sample mandala output"></img>
-
-      <p>
-        The code for the char-rnn algorithm is by
-        <a class="project__link" target="_blank" href="https://github.com/sherjilozair/char-rnn-tensorflow">sherjilozair</a> and the code for the <a class="project__link" target="_blank" href="https://github.com/MathuraMG/learning-machine/tree/master/week7/frontend">frontend can be found here</a> .
-      </p>
-
 
       <br>
       <a class="project__back-link" href="../index.html"> &#x2190; Back to Home </a>
