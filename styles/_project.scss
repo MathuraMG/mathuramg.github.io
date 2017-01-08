@@ -33,6 +33,7 @@
 .project__video-container {
   padding-right: 2rem;
   width: 100%;
+  margin: 1rem 0;
 }
 .project__video {
   width: 100%;
@@ -41,10 +42,17 @@
 
 .project__image {
   width: 100%;
+  margin: 1rem 0;
 }
 .project__image-small {
   width: 33%;
   display: inline-block;
+}
+
+.project__image-small-outline {
+  width: 33%;
+  display: inline-block;
+  outline: 1px solid black;
 }
 
 .project__image-medium {
@@ -82,6 +90,11 @@
   .project__image-small {
     width: 49%;
     display: inline-block;
+  }
+  .project__image-small-outline {
+    width: 49%;
+    display: inline-block;
+    outline: 1px solid black;
   }
   .project__image-medium {
     width: 100%;
