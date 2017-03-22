@@ -251,6 +251,9 @@
   width: 100%;
   margin: 1rem 0; }
 
+.project__image-thesis {
+  width: 80%; }
+
 .project__image-small {
   width: 33%;
   display: inline-block; }
