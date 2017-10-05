@@ -184,6 +184,12 @@
   text-decoration: none; }
   .pieces__item + .pieces__item {
     margin-bottom: 2rem; }
+  .pieces__item-large {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 2rem; }
 
 .pieces__list {
   flex-direction: column;
