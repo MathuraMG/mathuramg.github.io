@@ -58,30 +58,34 @@
 
   <section class="project">
     <div class="project-container">
-      <h2 class="project__heading"> Accessible p5 IDE</h2>
+      <h2 class="project__heading"> Accessibility p5</h2>
       <h5 class="project__sub-heading"> Accessibility, Programming</h5>
       <h4 class="project__content-heading">
           Details in <a class="project__link" target="_blank" href="http://ability.nyu.edu/processing">Ability Project</a>
       </h4>
+      <h4 class="project__content-heading">
+          Included in the <a class="project__link" target="_blank" href="https://medium.com/processing-foundation/introducing-the-2018-processing-foundation-fellows-a16ae4e87f80">Processing Fellowship</a>
+      </h4>
+      <h4 class="project__content-heading">
+          <a class="project__link" target="_blank" href="https://github.com/processing/p5.accessibility">p5.accessibility Library</a>
+      </h4>
       <p class="project__blurb">
-        Tools Used : React
+        Tools Used : React, Javascript
         <br>
-        In collabaration with Claire Kearney-Volpe and Cassie Tarakajian
-        Worked as the accessible developer on the project
+        In collabaration with Luis Morales-Navarro, Claire Kearney-Volpe
       </p>
 
       <p>
-        Coding is a means of production and self-expression that should be accessible to everyone. This project is an attempt to level the playing field with people that have low vision or blindness and want to learn to code. In line with <a class="project__link">The Processing Foundations</a> mission to promote software literacy and empower people of all interests and backgrounds to learn how to program and make creative work with code, the Processing Accessibility Project is a community-based research and development effort involving a large stakeholder network from academia, target end-user's interested in learning how to code and Processings open-source community.
-      <br>
-        Claire and I worked on making the p5 IDE accessible. While the project is still in beta testing, here are the main features.
+        Coding is a means of production and self-expression that should be accessible to everyone. This project is an attempt to level the playing field with people that have low vision or blindness and want to learn to code. In line with <a class="project__link" href="https://processingfoundation.org/" target="_blank">the Processing Foundations</a> mission to promote software literacy and empower people of all interests and backgrounds to learn how to program and make creative work with code, the Processing Accessibility Project is a community-based research and development effort involving a large stakeholder network from academia, target end-user's interested in learning how to code and Processings open-source community.
+      <br><br>
+        As part of this, we added features to the web p5-web editor to make it more accessible and are working a library that makes the p5 output accessible using a <a class="project__link" target="_blank" href="http://www.afb.org/prodBrowseCatResults.aspx?CatID=49">screen reader</a>.
       </p>
 
-      <h4 class="project__content-heading">The Layout</h4>
+
+      <h4 class="project__content-heading">The p5 web editor</h4>
       <p>
           The website itself is highly accessible. All elements, including the editor, are readable by screen readers (tested with JAWS/IE, OSX/Safari, NVDA/Firefox).
       </p>
-
-      <h4 class="project__content-heading">Accessible Options</h4>
       <p>
           Apart from the standard web elements, this IDE contains elements that are inclusive of a full programming experience. Two important features are audio warnings for lint messages (which are also visually indicated) and a textual/sonified representation of activity in the canvas (accessible output).
           <br>
@@ -90,14 +94,25 @@
 
       <div class="project__image-small-container">
         <p> Screen reader output for lint feature </p>
-        <img class="project__image-medium" src="/assets/p5/p5js1.png"
-        alt="screenshot of the p5 IDE with lint errors and screen reader output"></img>
-        <img class="project__image-medium" src="/assets/p5/p5js2.png"
-        alt="screenshot of the p5 IDE with lint errors and screen reader output"></img>
-        <p> Screen reader output for canvas </p>
         <img class="project__image-medium" src="/assets/p5/p5js3.png"
-        alt="screenshot of the p5 IDE with canvas output of a red ball and screen reader output"></img>
+        alt="screenshot of the p5 IDE with lint errors and screen reader output"></img>
         <img class="project__image-medium" src="/assets/p5/p5js4.png"
+        alt="screenshot of the p5 IDE with lint errors and screen reader output"></img>
+      </div>
+
+      <br><br>
+      <h4 class="project__content-heading">The p5.accessibility library</h4>
+      <p>
+        The accessible outputs are currently being developed in <a class="project__link" target="_blank" href="https://github.com/processing/p5.accessibility">this repository</a>.
+      </p>
+      <p>
+        The library helps makes the accessible p5 canvas available outside of the web IDE through a client side library that allows users to make any p5 sketches accessible for people that are blind and visually impaired. It does so by creating a text/sound based output for what one would see on the canvas.
+      </p>
+      <div class="project__image-small-container">
+        <p> Screen reader output for canvas </p>
+        <img class="project__image-medium" src="/assets/p5/p5js1.png"
+        alt="screenshot of the p5 IDE with canvas output of a red ball and screen reader output"></img>
+        <img class="project__image-medium" src="/assets/p5/p5js2.png"
         alt="screenshot of the p5 IDE with canvas output of a red ball and screen reader output"></img>
       </div>
       <p>
@@ -105,28 +120,17 @@
       </p>
       <div class="project__video-container" >
           <iframe class="project__video"
-          src="https://player.vimeo.com/video/198558577?title=0&byline=0&portrait=0"  frameborder="0" alt="users interacting with the wall installation" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          src="https://player.vimeo.com/video/198558922?title=0&byline=0&portrait=0"  frameborder="0" alt="users interacting with the wall installation" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-
-
       <p>
-        More detailed examples of how the outputs work are present in the below links
+        A more detailed example of how the outputs work is present in the below link
         <br>
-        <a class="project__link" target="_blank" href="http://mathuramg.com/monkeyPatchTest/">Text Output</a>
+        <a class="project__link" target="_blank" href="https://processing.github.io/p5.accessibility/examples/ExampleStyled/index.html">Accessible Outputs </a>
         <br>
-        <a class="project__link" target="_blank" href="http://mathuramg.com/MonkeyPatchGridTest/">Grid Output</a>
-        <br>
-        <a class="project__link" target="_blank" href="http://mathuramg.com/monkeyPatchSound/index.html">Sound Output</a>
       </p>
-
-      <p>
-        The accessible outputs are currently being developed in <a class="project__link" target="_blank" href="https://github.com/MathuraMG/p5-interceptor">this repository</a> and is linked to the <a class="project__link" target="_blank" href="http://alpha.editor.p5js.org/"> p5 IDE </a>.
-      </p>
-
       <br>
       <a class="project__back-link" href="../index.html"> &#x2190; Back to Home </a>
       <br>
-
     </div>
   </section>
 
