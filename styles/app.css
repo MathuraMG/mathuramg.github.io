@@ -91,10 +91,16 @@
     position: relative; }
 
   .nav, .footer {
-    height: inherit; } }
+    height: inherit; }
+
+  .container {
+    width: 100%; } }
 @media screen and (max-width: 480px) {
   .about {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .container {
+    width: 100%; } }
 .footer__list {
   display: flex;
   flex-direction: row;
