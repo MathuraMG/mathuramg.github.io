@@ -58,8 +58,8 @@
           <li class="nav__category nav__category-physcomp" tabIndex="0" onclick="changeCategory('physcomp')">
             Physical Computing
           </li>
-          <li class="nav__category nav__category-animation" tabIndex="0" onclick="changeCategory('animation')">
-            Animation
+          <li class="nav__category nav__category-education" tabIndex="0" onclick="changeCategory('education')">
+            Education
           </li>
           <li class="nav__category nav__category-design" tabIndex="0" onclick="changeCategory('design')">
             Interaction Design
@@ -89,12 +89,47 @@
         </ul>
       </footer>
     </div>
+    
+    <div class="container">
+    
+      <section class="introduction" role="main">
+        <p class="introduction__content">
+          Hi. I'm Mathura - a creative technologist in Bangalore. I work on projects that encourage alternate ways of education. I am currently working on Peblio - a computer science instructional tool, and Paper Crane Lab - an alternate education space in Bangalore.
+        </p>
+      </section>
 
-    <section class="projects" role="main">
+      <section class="projects" role="main">
 
       <ul class="projects__list" title="all projects">
-
-        <li class="projects__item tag-physcomp">
+        <li class="projects__item tag-programming tag-education">
+          <a class="projects__link" href="projects/peblio.html">
+            <img src="assets/projects/peblio.png" class="projects__image" alt="p5 logo"></img>
+            <div class="projects__title"> Peblio </div>
+            <div class="projects__tags"> programming, education </div>
+          </a>
+        </li>
+        <li class="projects__item tag-education">
+          <a class="projects__link" href="projects/paperCraneLab.html">
+            <img src="assets/projects/paperCraneLab.png" class="projects__image" alt="p5 logo"></img>
+            <div class="projects__title"> Paper Crane Lab </div>
+            <div class="projects__tags"> education </div>
+          </a>
+        </li>
+        <li class="projects__item tag-physcomp tag-design tag-fabrication">
+          <a class="projects__link" href="projects/dataThroughDesign.html">
+            <img src="assets/projects/dataThroughDesign.png" class="projects__image" alt="p5 logo"></img>
+            <div class="projects__title"> What Our Numbers Don't Show </div>
+            <div class="projects__tags"> physical computing, fabrication, interaction design </div>
+          </a>
+        </li>
+        <li class="projects__item tag-design">
+          <a class="projects__link" href="projects/rubeGoldberg.html">
+            <img src="assets/projects/rubeGoldberg.png" class="projects__image" alt="p5 logo"></img>
+            <div class="projects__title"> Rube Goldberg v. ITP </div>
+            <div class="projects__tags"> Interaction Design </div>
+          </a>
+        </li>
+        <li class="projects__item tag-physcomp tag-education">
           <a class="projects__link" href="projects/catinabox.html">
             <img src="assets/projects/catinabox.png" class="projects__image" alt="p5 logo"></img>
             <div class="projects__title"> Cat In A Box </div>
@@ -106,14 +141,6 @@
           <a class="projects__link" href="projects/p5.html">
             <img src="assets/projects/p5js.png" class="projects__image" alt="p5 logo"></img>
             <div class="projects__title"> Accessibility p5 </div>
-            <div class="projects__tags"> programming, accessibility </div>
-          </a>
-        </li>
-
-        <li class="projects__item tag-programming tag-accessibility">
-          <a class="projects__link" href="projects/beatbox.html">
-            <img src="assets/projects/beatbox.png" class="projects__image" alt="user holding phone with beatbox app running on it"></img>
-            <div class="projects__title"> Beat-Box </div>
             <div class="projects__tags"> programming, accessibility </div>
           </a>
         </li>
@@ -134,14 +161,6 @@
           </a>
         </li>
 
-        <li class="projects__item tag-programming tag-physcomp tag-accessibility">
-          <a class="projects__link" href="projects/braille.html">
-            <img src="assets/projects/brailledisplay.png" class="projects__image" alt="3D model of single braille cell"></img>
-            <div class="projects__title"> Braille Display </div>
-            <div class="projects__tags"> programming, physical computing, accessibility</div>
-          </a>
-        </li>
-
         <li class="projects__item tag-physcomp tag-programming">
           <a class="projects__link" href="projects/darkMaze.html">
             <img src="assets/projects/darkMaze.jpg" class="projects__image" alt="open BCI head gear">
@@ -149,14 +168,6 @@
             <div class="projects__tags"> programming, physical computing </div>
             </img>
 
-          </a>
-        </li>
-
-        <li class="projects__item  tag-programming tag-design">
-          <a class="projects__link" href="projects/mathPatterns.html">
-            <img src="assets/projects/mathPatterns.jpg" class="projects__image" alt="user interacting with project on a screen"></img>
-            <div class="projects__title"> Math Patterns </div>
-            <div class="projects__tags"> programming, interaction design </div>
           </a>
         </li>
 
@@ -184,52 +195,10 @@
           </a>
         </li>
 
-        <li class="projects__item  tag-physcomp tag-programming">
-          <a class="projects__link" href="projects/ble.html">
-            <img src="assets/projects/ble.png" class="projects__image" alt="cellphone screen and LED screen with the same pattern"></img>
-            <div class="projects__title"> Bluetooth LE </div>
-            <div class="projects__tags"> programming, physical computing </div>
-          </a>
-        </li>
-
-        <li class="projects__item  tag-physcomp">
-          <a class="projects__link" href="projects/theremin.html">
-            <img src="assets/projects/theramin.jpg" class="projects__image" alt="capacitive theremin"></img>
-            <div class="projects__title"> Capacitive Theremin </div>
-            <div class="projects__tags"> physical computing </div>
-          </a>
-        </li>
-
-        <li class="projects__item tag-animation">
-          <a class="projects__link" href="projects/digianimation.html">
-            <img src="assets/projects/digianimation.png" class="projects__image" alt="screenshot from animation"></img>
-            <div class="projects__title"> Digital Animation </div>
-            <div class="projects__tags"> animation </div>
-          </a>
-        </li>
-
-        <li class="projects__item tag-animation">
-          <a class="projects__link" href="projects/animation.html">
-            <img src="assets/projects/animation.jpg" class="projects__image" alt="single picture of lego animation"></img>
-            <div class="projects__title"> Animation </div>
-            <div class="projects__tags"> animation </div>
-          </a>
-        </li>
-
-        <li class="projects__item tag-programming">
-          <a class="projects__link" href="projects/AD.html">
-            <img src="assets/projects/earlydet.png" class="projects__image" alt="screenshot of isolation of grey area from MRI scan"></img>
-            <div class="projects__title"> Early Detection of AD </div>
-            <div class="projects__tags"> programming </div>
-          </a>
-        </li>
-
-
-
       </ul>
 
     </section>
-
+  </div>
   </div>
 
 </body>
