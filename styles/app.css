@@ -27,8 +27,17 @@
   display: flex;
   flex-direction: row; }
 
+.introduction__content {
+  padding-right: 3.5rem;
+  padding-left: 1.5rem; }
+
 .nav {
   height: 90%;
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  width: 80%;
   display: flex;
   flex-direction: column; }
 
@@ -44,9 +53,7 @@
   flex-direction: row; }
 
 .projects, .pieces {
-  width: 82%;
-  position: fixed;
-  margin-left: 18%;
+  width: 100%;
   top: 0;
   bottom: 0;
   overflow-y: scroll; }
@@ -309,13 +316,19 @@
     display: inline-block; } }
 .projects__list {
   flex-direction: column;
-  margin-right: 2rem; }
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  padding-right: 2rem;
+  box-sizing: border-box; }
 
 .projects__blurb {
   display: none; }
 
 .projects__item {
-  width: 24%;
+  width: 25%;
+  padding: 1.5rem;
+  box-sizing: border-box;
   display: inline-flex;
   vertical-align: top;
   flex-direction: column;
@@ -332,7 +345,7 @@
       opacity: 1; }
 
 .projects__title {
-  width: 85%;
+  width: 100%;
   margin-top: 0.4rem;
   font-family: "Josefin Slab", serif;
   font-weight: 600;
@@ -344,7 +357,7 @@
     color: #ff706c; }
 
 .projects__tags {
-  width: 85%;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -353,7 +366,7 @@
   font-size: 0.8rem; }
 
 .projects__image {
-  width: 85%;
+  width: 100%;
   opacity: 0.9; }
 
 .projects__link {

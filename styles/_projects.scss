@@ -1,6 +1,10 @@
 .projects__list {
   flex-direction: column;
-  margin-right: 2rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 .projects__blurb {
@@ -9,7 +13,9 @@
 
 .projects__item
 {
-  width: 24%;
+  width: 25%;
+  padding: 1.5rem;
+  box-sizing: border-box;
   display: inline-flex;
   vertical-align: top;
   flex-direction: column;
@@ -32,7 +38,7 @@
 
 .projects__title
 {
-  width: 85%;
+  width: 100%;
   margin-top: 0.4rem;
   font-family: $primary-font;
   font-weight: 600;
@@ -47,7 +53,7 @@
 
 .projects__tags
 {
-  width: 85%;
+  width: 100%;
   font-family: $secondary-font;
   font-weight: 400;
   text-decoration: none;
@@ -58,7 +64,7 @@
 
 .projects__image
 {
-  width: 85%;
+  width: 100%;
   opacity: 0.9;
 }
 
